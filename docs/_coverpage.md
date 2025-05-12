@@ -1,6 +1,6 @@
 ![logo](https://www.smart-is.com/wp-content/uploads/2019/09/moca-app-logo.png)
 
-# Smart Devops <small id="apptest">{{ smartDevops }}</small>
+# Smart Devops
 
 > Smart Devops
 
