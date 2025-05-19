@@ -1,8 +1,8 @@
-# SmartDev Ops
+# Smart DevOps
 
 ## Introduction
 
-Congratulations on choosing **Smart Dev ops** - your all-in-one solution. 
+Congratulations on choosing **Smart DevOps** - your all-in-one solution. 
 
 This user guide is designed to help you with our powerful and intuitive software, guiding you through its features and functionality.
 
