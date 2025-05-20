@@ -2,5 +2,6 @@
 
 - [Home](./readme.md)
 - [Getting Started](./GettingStarted.md)
-- [Issue Assignment](./IssueAssignment.md)
-- [Integration with Vaersion Control Systems]()
+- [Setup Guide](./setupguide.md)
+- [Controlled Object Layout](controlledobjectlayout.md)
+

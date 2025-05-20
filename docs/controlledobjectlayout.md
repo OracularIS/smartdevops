@@ -1,34 +1,3 @@
-# Issue Assignment
-Smart DevOps enables change tracking by issue assignment of a specific issue through GUI, ensuring accountability and control across all environments — whether Legacy, Web, or MOCA Client. 
-
-The steps below will guide you through how the issue assignment process works in the GUI, helping you track changes effectively and with ease. 
-
-1. Navigate to **Configuration → Extensions → OSSI – Issue Assignment** to access the Issue Assignment screen. 
-
-    ![image1](./assets/image1.png) 
-
-2. To create a new issue assignment, click on New, then enter the User ID and Issue ID. Select the appropriate Status Code—Active, Inactive, or Complete. Please note that tracking is only performed for issues marked as Active. Add a brief Issue Description and click Save to complete the assignment. 
-
-    ![image2](./assets/image2.png)
-
-- Each screen or environment allows only one active issue at a time to maintain clarity and traceability. 
-
-- Users can view assigned issues, making it easy to identify who is responsible for a change. 
- 
- 3. Any changes made are recorded on the Issue Assignment screen. Modifications to commands are logged in **Files** with the corresponding object name, data changes in Integrator are logged in **Seamles** while changes made through GUI or MOCA are reflected in **Tables** 
-
-    ![image3](./assets/image3.png)
-
- 4. To finalize the issue, select Complete and then click Commit. This action updates the connected repository, such as Git or Bugzilla. Make sure all required fields are filled in. To enable rollout creation in the back end, ensure the Rollout option is selected. Select OK. 
-
-    ![image4](./assets/image4.png)
-
-- Change tracking can be disabled when necessary, offering flexibility in specific scenarios.  
-
-- The system supports granular control over tracking policies (e.g., dscmst, configuration flags). 
-
-- Unauthorized changes are prevented unless they are explicitly linked to an assigned issue, enforcing discipline in the development workflow. 
-
 # Controlled Object Layout
 
 SmartDevOps enforces a disciplined and consistent layout to manage different types of **controlled objects** in the Blue Yonder WMS environment. In this section, we’ll walk you through how each component is handled, and what best practices to follow so that your rollouts are clean, traceable, and consistent.
