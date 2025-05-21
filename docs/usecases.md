@@ -4,6 +4,8 @@
 - When code is changed directly through the MOCA Client, the version control system automatically tracks these changes.
 - This includes any script, logic, or configuration modified within the client interface
 
+---
+
 ## Data Changes 
 - Any data change made through the portal or directly from the MOCA Client is logged and tracked by Smart DevOps.
 
@@ -11,10 +13,14 @@
 
 - Whether you're inserting, updating, or deleting data, if it’s done through a command — it’s getting tracked.
 
+---
+
 ## Integrator Changes
 - Similarly, any changes performed via integrators are also tracked — provided the underlying action triggers a MOCA command.
 - Changes made to integrator components such as events, IFDs (Interface Definitions), mappings, etc., are also tracked by Smart DevOps.
 - This ensures that integrations are version-controlled and traceable just like code and data.
+
+---
 
 ## View Changes 
 You can view the changes from any of the following interfaces:
@@ -104,6 +110,8 @@ You can view the changes from any of the following interfaces:
         
 This structured view helps in identifying and verifying all changes made in the context of a particular issue or user activity.
 
+---
+
 ## Generating new Triggers
 
 - **From Portal**
@@ -115,7 +123,7 @@ This structured view helps in identifying and verifying all changes made in the 
     <div style="text-align: left;">
      <img src="./assets/image1.png"
        alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+       style="height: 200px; width: 450px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -202,6 +210,7 @@ This structured view helps in identifying and verifying all changes made in the 
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
+---
 
 ## Create Rollout 
 You can create Rollout from any of the following interfaces:
@@ -214,7 +223,7 @@ You can create Rollout from any of the following interfaces:
     <div style="text-align: left;">
      <img src="./assets/image1.png"
        alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+       style="height: 200px;width: 450px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -279,7 +288,7 @@ You can create Rollout from any of the following interfaces:
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
     
-
+---
 
 ## Committing
 You can commit your changes from any of the following interfaces:
@@ -293,7 +302,7 @@ You can commit your changes from any of the following interfaces:
     <div style="text-align: left;">
      <img src="./assets/image1.png"
        alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+       style="height: 200px;width: 450px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -362,4 +371,6 @@ You can commit your changes from any of the following interfaces:
       </div>
 
 ---
+
+<br><br>
 

@@ -35,4 +35,7 @@
 
   You can disable tracking by modifying the associated policy. For example, if you do not want to track changes to a description field in a table, disable the policy that governs tracking for that field.
 
-  ---
+  
+---
+
+<br><br>

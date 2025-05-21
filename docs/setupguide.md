@@ -110,7 +110,13 @@ What changes are being made — Every edit, create, delete, or deployment is rec
       |-------------------------|------------------------------------|----------|----------------------------------------|
       | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-DSCMST      | EXCLUDE-COLNAM | wh_id|
 
+  - **How It Works Generally**
 
+     You can control what gets tracked by configuring tracking policies. These policies define which tables, columns, or objects should be excluded from version control.
+     
+    If you want to exclude specific data entries in a table like LOCMST, add a policy that excludes the required fields or keys based on your use case.
+To exclude specific data, you simply disable or modify the policy associated with it.
+---
 ## Building Rollouts Without Integrated Version Control
 Smart DevOps enables change tracking by issue assignment of a specific issue through GUI, ensuring accountability and control across all environments — whether Legacy, Web, or MOCA Client. 
 
@@ -122,7 +128,7 @@ The steps below will guide you through how the issue assignment process works in
     <div style="text-align: left;">
      <img src="./assets/image1.png"
        alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+       style="height: 200px; width: 450px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
@@ -172,6 +178,8 @@ The steps below will guide you through how the issue assignment process works in
 
 - Unauthorized changes are prevented unless they are explicitly linked to an assigned issue, enforcing discipline in the development workflow. 
 
+---
+
 ## Version Control Integration
 SmartDevOps integrates seamlessly with Git-based version control systems to help you manage and track changes effectively. This section will walk you through how to create a new Git branch, commit your changes, and verify them in Bitbucket.
 
@@ -220,6 +228,7 @@ SmartDevOps integrates seamlessly with Git-based version control systems to help
   3. Open the branch to confirm that your changes are visible and correctly committed.
 
   This helps ensure that your version control actions were successful and that your work is properly synced with the repository.
+
 
 #### Create a Pull Request
 
@@ -272,3 +281,5 @@ SmartDevOps integrates seamlessly with Git-based version control systems to help
      
 
 ---
+
+<br><br>
