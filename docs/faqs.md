@@ -12,7 +12,7 @@
 
   Smart DevOps tracks changes through issue assignments. Any modifications made using MOCA commands, the GUI, or integrator tools are logged against a specific issue ID. These changes can later be viewed or rolled out through the Smart DevOps platform.
 
-+ **Question 4:** What types of changes does Smart DevOps track?+
++ **Question 4:** What types of changes does Smart DevOps track? +
 
   Smart DevOps tracks code changes (e.g., MOCA commands), data changes (via MOCA or portal), integrator changes (events, IFDS), and GUI-related changes. All tracked changes are linked to specific issues for easy review and deployment.
 
