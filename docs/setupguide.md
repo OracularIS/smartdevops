@@ -118,11 +118,27 @@ The steps below will guide you through how the issue assignment process works in
 
 1. Navigate to **Configuration → Extensions → OSSI – Issue Assignment** to access the Issue Assignment screen. 
 
-    ![image1](./assets/image1.png) 
+   
+    <div style="text-align: left;">
+     <img src="./assets/image1.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+    </div>
 
 2. To create a new issue assignment, click on New, then enter the User ID and Issue ID. Select the appropriate Status Code—Active, Inactive, or Complete. Please note that tracking is only performed for issues marked as Active. Add a brief Issue Description and click Save to complete the assignment. 
 
-    ![image2](./assets/image2.png)
+   
+    <div style="text-align: left;">
+     <img src="./assets/image2.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+       </div>
 
 - Each screen or environment allows only one active issue at a time to maintain clarity and traceability. 
 
@@ -130,11 +146,25 @@ The steps below will guide you through how the issue assignment process works in
  
  3. Any changes made are recorded on the Issue Assignment screen. Modifications to commands are logged in **Files** with the corresponding object name, data changes in Integrator are logged in **Seamles** while changes made through GUI or MOCA are reflected in **Tables** 
 
-    ![image3](./assets/image3.png)
+    <div style="text-align: left;">
+     <img src="./assets/image3.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
  4. To finalize an issue, first click **Complete**. Then, based on what you need, choose the appropriate options. If you only want to commit your changes to the connected repository, enable the **Commit** option. If you only want to create a rollout without committing the changes, enable the **Rollout** option. If you want to do both—commit and create a rollout—make sure to enable both options. Once all required fields are filled, click **OK** to complete the process.
 
-    ![image4](./assets/image4.png)
+    <div style="text-align: left;">
+      <img src="./assets/image4.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
 - Change tracking can be disabled when necessary, offering flexibility in specific scenarios.  
 
@@ -197,15 +227,48 @@ SmartDevOps integrates seamlessly with Git-based version control systems to help
 
   1. Navigate to the BitBucket screen. 
 
-     ![image18](./assets/image18.png)
+     <div style="text-align: left;">
+     <img src="./assets/image18.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
   2. Click on Create pull request for your branch.
 
-     ![image19](./assets/image19.png)
-     ![image20](./assets/image20.png)
+     <div style="text-align: left;">
+     <img src="./assets/image19.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+     
+
+     <div style="text-align: left;">
+     <img src="./assets/image20.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
   3. Review the code changes shown in the diff view.
   4. Submit the pull request for review.
   5. Approve and merge the pull request into the main branch.
+   
+     <div style="text-align: left;">
+      <img src="./assets/image21.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+     </div>
+     
 
-     ![image21](./assets/image21.png)
+---
