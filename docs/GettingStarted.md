@@ -15,4 +15,6 @@ Installing the MOCA Client is required to successfully launch and operate SmartD
 ## Blue Yonder Requirement
 
 To use SmartDevOps, the Blue Yonder (BY) environment must have the **OSSI Issue Assignment** module installed.  
-This module provides access to the **Issue Assignment** screen, which is essential for managing issues and leveraging SmartDevOps capabilities such as version control, rollouts, and change tracking.
+This module provides access to the Issue Assignment screen, which is essential for managing issues and leveraging SmartDevOps capabilities such as version control, rollouts, and change tracking.
+
+---

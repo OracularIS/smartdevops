@@ -24,11 +24,25 @@ You can view the changes from any of the following interfaces:
 
     1. Navigate to **Configuration → Extensions → OSSI – Issue Assignment** to access the Issue Assignment screen. 
 
-        ![image1](./assets/image1.png) 
+    <div style="text-align: left;">
+     <img src="./assets/image1.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
      2. Select the specific issue or user ID for which you want to review the changes.
     You can also search for the issue or user ID by adding them in the General tab.
-        ![image27](./assets/image27.png) 
+    <div style="text-align: left;">
+     <img src="./assets/image27.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
     3. Once selected, the related changes are categorized into the following tabs:
 
@@ -36,19 +50,40 @@ You can view the changes from any of the following interfaces:
         - **Seamless Tab:** Shows all **integrator-related** changes (such as events, IFDs, etc.).
         - **Tables Tab:** Lists changes related to the **GUI** and front-end configurations.
 
-        ![image28](./assets/image28.png)
+    <div style="text-align: left;">
+     <img src="./assets/image28.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 - **From Fat Client**
 
     To view tracked changes from the Fat Client, follow these steps:
 
     1. Navigate to the  **OSSI Issue Assignment** screen.
 
-       ![image22](./assets/image22.png)
+    <div style="text-align: left;">
+     <img src="./assets/image22.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
     2. Select the specific issue or user ID for which you want to review the changes.
     You can also search for the issue or user ID by adding them in the General tab.
 
-       ![image23](./assets/image23.png)
+    <div style="text-align: left;">
+     <img src="./assets/image23.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
     3. Once selected, the related changes are categorized into the following tabs:
 
@@ -56,7 +91,14 @@ You can view the changes from any of the following interfaces:
         - **Seamless Tab:** Shows all integrator-related changes (such as events, IFDs, etc.).
         - **Tables Tab:** Lists changes related to the GUI and front-end configurations.
 
-       ![image24](./assets/image24.png)
+    <div style="text-align: left;">
+     <img src="./assets/image24.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
  
         
@@ -70,28 +112,95 @@ This structured view helps in identifying and verifying all changes made in the 
     
     1. Navigate to **Configuration → Extensions → OSSI – Issue Assignment** to access the Issue Assignment screen.
 
-        ![image1](./assets/image1.png) 
+    <div style="text-align: left;">
+     <img src="./assets/image1.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
     2. Select the specific issue or user ID for which you want to review the changes.
-You can also search for the issue or user ID by adding them in the General tab.
+    You can also search for the issue or user ID by adding them in the General tab.
 
-        ![image27](./assets/image27.png) 
+    <div style="text-align: left;">
+     <img src="./assets/image27.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+  
+    3. To generate new **triggers**, click **Create Triggers** button.
+
+    <div style="text-align: left;">
+     <img src="./assets/image35.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+    4. Once all the required fields are filled out, click **OK**. This will generate the trigger successfully.
+    <div style="text-align: left;">
+     <img src="./assets/image36.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>     
 
 - **From Fat Client**
 
     To generate new triggers from the Fat Client, follow these steps:
 
     1. Navigate to the **OSSI Issue Assignment** screen.
-       ![image22](./assets/image22.png)
+    <div style="text-align: left;">
+     <img src="./assets/image22.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
     2. Select the specific issue or user ID for which you want to commit the change.
     You can also search for the issue or user ID by adding them in the General tab.
 
-        ![image23](./assets/image23.png)
+    
+    <div style="text-align: left;">
+     <img src="./assets/image23.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
     3. To generate new **triggers**, click **Create Triggers** button.
-     ![image33](./assets/image33.png)
+     
+    <div style="text-align: left;">
+     <img src="./assets/image33.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+    
+    4. Once all the required fields are filled out, click **OK**. This will generate the trigger successfully.
 
+    <div style="text-align: left;">
+     <img src="./assets/image34.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
 
 ## Create Rollout 
@@ -102,15 +211,36 @@ You can create Rollout from any of the following interfaces:
 
     1. Navigate to **Configuration → Extensions → OSSI – Issue Assignment** to access the Issue Assignment screen. 
 
-        ![image1](./assets/image1.png) 
+    <div style="text-align: left;">
+     <img src="./assets/image1.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
      2. Select the specific issue or user ID for which you want to review the changes.
     You can also search for the issue or user ID by adding them in the General tab.
-        ![image27](./assets/image27.png) 
+    <div style="text-align: left;">
+     <img src="./assets/image27.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div> 
     
     3. To finalize an issue, first click **Complete**. If your goal is to create a rollout, **enable** the **Create Rollout** option. Once all required fields are filled in, click **OK** to proceed. This action will generate a rollout in the backend.
 
-        ![image29](./assets/image29.png) 
+    <div style="text-align: left;">
+     <img src="./assets/image29.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
 - **From Fat Client**
 
@@ -118,15 +248,36 @@ You can create Rollout from any of the following interfaces:
 
     1. Navigate to the  **OSSI Issue Assignment** screen.
 
-       ![image22](./assets/image22.png)
+    <div style="text-align: left;">
+     <img src="./assets/image22.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
     2. Select the specific issue or user ID for which you want to create the rollout.
     You can also search for the issue or user ID by adding them in the General tab.
 
-       ![image23](./assets/image23.png)
+    <div style="text-align: left;">
+     <img src="./assets/image23.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
     3. To finalize an issue, first click **Complete**. If your goal is to create a rollout, **enable** the **create_rollout** option. Once all required fields are filled in, click **OK** to proceed. This action will generate a rollout in the backend.
-       ![image24](./assets/image25.png)
+    <div style="text-align: left;">
+     <img src="./assets/image25.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
 
 
@@ -139,15 +290,36 @@ You can commit your changes from any of the following interfaces:
 
     1. Navigate to **Configuration → Extensions → OSSI – Issue Assignment** to access the Issue Assignment screen. 
 
-        ![image1](./assets/image1.png) 
+    <div style="text-align: left;">
+     <img src="./assets/image1.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
      2. Select the specific issue or user ID for which you want to review the changes.
     You can also search for the issue or user ID by adding them in the General tab.
-        ![image27](./assets/image27.png) 
+    <div style="text-align: left;">
+     <img src="./assets/image27.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
     3. To finalize an issue and commit your changes, first click **Complete**. If you only want to commit the changes to the connected repository (such as Git or Bugzilla), **enable** the **Commit** option. Make sure all required fields are properly filled out. Then click **OK** to complete the process. This will push the committed changes to the selected repository under the specified issue.
 
-        ![image29](./assets/image30.png) 
+    <div style="text-align: left;">
+     <img src="./assets/image29.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div> 
 
 - **From Fat Client**
 
@@ -155,15 +327,39 @@ You can commit your changes from any of the following interfaces:
 
     1. Navigate to the  **OSSI Issue Assignment** screen.
 
-       ![image22](./assets/image22.png)
+    <div style="text-align: left;">
+     <img src="./assets/image22.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
     
     2. Select the specific issue or user ID for which you want to commit the change.
     You can also search for the issue or user ID by adding them in the General tab.
 
-       ![image23](./assets/image23.png)
+    <div style="text-align: left;">
+     <img src="./assets/image23.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
     3. To finalize an issue and commit your changes, first click **Complete**. If you only want to commit the changes to the connected repository (such as Git or Bugzilla), **enable** the **do_commit** option. Make sure all required fields are properly filled out. Then click **OK** to complete the process. This will push the committed changes to the selected repository under the specified issue.
     
-        ![image26](./assets/image26.png)
 
+    
+    <div style="text-align: left;">
+     <img src="./assets/image26.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
+---
 
