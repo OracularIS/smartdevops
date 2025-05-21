@@ -30,13 +30,13 @@ You can view the changes from any of the following interfaces:
 
     1. Navigate to **Configuration → Extensions → OSSI – Issue Assignment** to access the Issue Assignment screen. 
 
-     <div style="text-align: left;">
+    <div style="text-align: left;">
      <img src="./assets/image1.png"
        alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+       style="height: 200px; width: 400px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+       ondblclick="this.style.height='200px';this.style.width='200px'; this.style.cursor='zoom-in';">
       </div>
     
      2. Select the specific issue or user ID for which you want to review the changes.
@@ -223,10 +223,10 @@ You can create Rollout from any of the following interfaces:
     <div style="text-align: left;">
      <img src="./assets/image1.png"
        alt="undirectedmenu"
-       style="height: 200px;width: 450px; margin: auto; display: block; cursor: zoom-in;
+       style="height: 200px; width: 400px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+       ondblclick="this.style.height='200px';this.style.width='200px'; this.style.cursor='zoom-in';">
       </div>
     
      2. Select the specific issue or user ID for which you want to review the changes.
@@ -302,10 +302,10 @@ You can commit your changes from any of the following interfaces:
     <div style="text-align: left;">
      <img src="./assets/image1.png"
        alt="undirectedmenu"
-       style="height: 200px;width: 450px; margin: auto; display: block; cursor: zoom-in;
+       style="height: 200px; width: 400px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+       ondblclick="this.style.height='200px';this.style.width='200px'; this.style.cursor='zoom-in';">
       </div>
     
      2. Select the specific issue or user ID for which you want to review the changes.
