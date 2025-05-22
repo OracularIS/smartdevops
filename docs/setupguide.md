@@ -128,10 +128,10 @@ The steps below will guide you through how the issue assignment process works in
     <div style="text-align: left;">
      <img src="./assets/image1.png"
        alt="undirectedmenu"
-       style="height: 200px; width: 400px; margin: auto; display: block; cursor: zoom-in;
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px';this.style.width='200px'; this.style.cursor='zoom-in';">
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
 2. To create a new issue assignment, click on New, then enter the User ID and Issue ID. Select the appropriate Status Code—Active, Inactive, or Complete. Please note that tracking is only performed for issues marked as Active. Add a brief Issue Description and click Save to complete the assignment. 
