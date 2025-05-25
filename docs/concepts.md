@@ -64,3 +64,16 @@ A **control file (CTL)**instruct the system that what you need to do with that d
 - Avoid using `INSERT`, `UPDATE`, or `DELETE` directly.
 - Call commands like `Create Movement Zone`, passing relevant arguments **without IDs**.
 - IDs are generated internally by the system to avoid environment-based conflicts.
+
+### Triggers
+
+**Triggers are the starting point of the tracking mechanism.**  
+Whenever we want to track changes in the system, we create a corresponding trigger.
+
+- These triggers are responsible for identifying when a specific change occurs — whether it's a **create**, **update**, or **remove** action.
+- The core idea is to track every change that results in the execution of a **MOCA command** at the end.
+
+#### How It Works:
+- For each operation type (create, update, remove), the trigger **defines the standard MOCA command** that will be used.
+- This ensures consistent and reliable tracking across environments, while also enforcing best practices through the use of standard commands.
+
