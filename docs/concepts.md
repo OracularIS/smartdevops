@@ -76,4 +76,8 @@ Whenever we want to track changes in the system, we create a corresponding trigg
 #### How It Works:
 - For each operation type (create, update, remove), the trigger **defines the standard MOCA command** that will be used.
 - This ensures consistent and reliable tracking across environments, while also enforcing best practices through the use of standard commands.
+---
+
+<br><br>
+
 
