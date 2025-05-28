@@ -97,7 +97,7 @@ What changes are being made — Every edit, create, delete, or deployment is rec
     - **How to do it for policies**
     
       If you want to skip tracking for specific fields, you can simply **disable the policy** associated with that field like
-      | polcod                  | polvar                            | polval   | rtstr1                        |
+      | `polcod`                  | `polvar`                            | `polval`   | `rtstr1`                        |
       |-------------------------|------------------------------------|----------|----------------------------------------|
       | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-POLDAT       | EXCLUDE-POLCOD | ALLOC-LOC-LOCK|
 
@@ -106,14 +106,14 @@ What changes are being made — Every edit, create, delete, or deployment is rec
        If you don’t want to track the **DESCRIPTION** field (or any specific field), you can simply **disable the policy** related to that field.
 
       Here's an example:
-       | polcod                  | polvar                            | polval   | rtstr1                        |
+       | `polcod`                  | `polvar`                            | `polval`   | `rtstr1`                        |
       |-------------------------|------------------------------------|----------|----------------------------------------|
       | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-DSCMST      | EXCLUDE-COLNAM | wh_id|
 
   - **How It Works Generally**
 
      You can control what gets tracked by configuring tracking policies. These policies define which tables, columns, or objects should be excluded from version control.
-     
+
     If you want to exclude specific data entries in a table like LOCMST, add a policy that excludes the required fields or keys based on your use case.
 To exclude specific data, you simply disable or modify the policy associated with it.
 ---
@@ -128,11 +128,11 @@ The steps below will guide you through how the issue assignment process works in
     <div style="text-align: left;">
      <img src="./assets/image1.png"
        alt="undirectedmenu"
-       style="height: 200px; width: 450px; margin: auto; display: block; cursor: zoom-in;
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-    </div>
+      </div>
 
 2. To create a new issue assignment, click on New, then enter the User ID and Issue ID. Select the appropriate Status Code—Active, Inactive, or Complete. Please note that tracking is only performed for issues marked as Active. Add a brief Issue Description and click Save to complete the assignment. 
 
@@ -256,6 +256,7 @@ SmartDevOps integrates seamlessly with Git-based version control systems to help
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
      
+     Now click on Create pull request.
 
      <div style="text-align: left;">
      <img src="./assets/image20.png"

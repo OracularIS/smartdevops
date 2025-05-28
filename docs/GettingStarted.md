@@ -18,3 +18,5 @@ To use SmartDevOps, the Blue Yonder (BY) environment must have the **OSSI Issue 
 This module provides access to the Issue Assignment screen, which is essential for managing issues and leveraging SmartDevOps capabilities such as version control, rollouts, and change tracking.
 
 ---
+
+<br><br>
