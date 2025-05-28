@@ -1,10 +1,9 @@
-![logo](https://www.smart-is.com/wp-content/uploads/2019/09/moca-app-logo.png)
+<img src="./assets/logo.png" alt="Image description" height="200" style="object-fit: cover;">
+
 
 # Smart DevOps
 
-> Smart DevOps
-
- If you're ready to start managing development changes in the Blue Yonder (BY) environment with confidence, SmartDevOps is here to help.
+ If you're ready to start managing development changes in the Blue Yonder (BY) environment with confidence, Smart DevOps is here to help.
 
 [Get in touch](https://www.smart-is.com/what-we-do/smart-product/smart-devops/)
 [Documentation](./readme.md)

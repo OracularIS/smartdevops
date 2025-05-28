@@ -1,8 +1,8 @@
-# FAQ's
+# FAQs
 
 + **Question 1:** What is Smart DevOps? +
 
-  SmartDevOps is a version control and deployment tool integrated with Blue Yonder (BY) environments. It helps track, manage, and roll out development changes safely and efficiently using policies, issue assignments, and control files.
+  SmartDevOps is a version control and deployment tool integrated with Blue Yonder (BY) environments. It helps track, manage, and rollout development changes safely and efficiently using policies, issue assignments, and control files.
 
 + **Question 2:** What tools or setup are required to use Smart DevOps? +
 
@@ -18,11 +18,11 @@
 
 + **Question 5:** How can I create a rollout using Smart DevOps? +
 
-  To create a rollout, complete your changes, go to the OSSI Issue Assignment screen, and select the “Complete” option. Then, enable the "Create Rollout" option before confirming with “OK.” This will generate the rollout package in the backend.
+  To create a rollout, complete your changes, go to the OSSI Issue Assignment screen, and select the “Complete” option. Then enable the "Create Rollout" option before confirming with “OK.” This will generate the rollout package in the backend.
 
 + **Question 6:** Is it possible to commit changes without creating a rollout? +
 
-  Yes. When completing an issue, enable only the “commit” option if you do not wish to generate a rollout. This will save the changes to the version control system without creating a rollout package.
+  Yes when completing an issue, enable only the “commit” option if you do not wish to generate a rollout. This will save the changes to the version control system without creating a rollout package.
 
 + **Question 7:** Where can I view the changes tracked by Smart DevOps? +
 
