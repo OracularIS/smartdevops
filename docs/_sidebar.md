@@ -4,7 +4,7 @@
 - [Setup Guide](./setupguide.md)
 - [Concepts](./concepts.md)
 - [Use Cases](./usecases.md)
-- [Structure Of Control Files](./Control%20files)
+- [Structure Of Control Files](./Controlfiles)
 - [FAQ's](./faqs.md)
 <!--- [Controlled Object Layout](controlledobjectlayout.md)-->
 <!--- [Getting Started](./GettingStarted.md)-->
