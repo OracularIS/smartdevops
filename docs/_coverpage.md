@@ -1,4 +1,4 @@
-<img src="./assets/logo.png" alt="Image description" height="200" style="object-fit: cover;">
+<img src="./assets/logo.png" alt="Image description" height="80" style="object-fit: cover;">
 
 
 # Smart DevOps
