@@ -55,7 +55,7 @@ SmartDevOps integrates seamlessly with Git-based version control systems to help
   1. Navigate to the BitBucket screen. 
 
      <div style="text-align: left;">
-     <img src="../assets/image18.png"
+     <img src="./assets/image18.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -66,7 +66,7 @@ SmartDevOps integrates seamlessly with Git-based version control systems to help
   2. Click on Create pull request for your branch.
 
      <div style="text-align: left;">
-     <img src="../assets/image19.png"
+     <img src="./assets/image19.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -77,7 +77,7 @@ SmartDevOps integrates seamlessly with Git-based version control systems to help
      Now click on Create pull request.
 
      <div style="text-align: left;">
-     <img src="../assets/image20.png"
+     <img src="./assets/image20.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -90,7 +90,7 @@ SmartDevOps integrates seamlessly with Git-based version control systems to help
   5. Approve and merge the pull request into the main branch.
    
      <div style="text-align: left;">
-      <img src="../assets/image21.png"
+      <img src="./assets/image21.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
