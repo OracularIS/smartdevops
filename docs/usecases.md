@@ -11,7 +11,7 @@
 
 - This is because all data operations are ultimately executed through underlying MOCA commands, regardless of the interface used.
 
-- Whether you're inserting, updating, or deleting data, if it’s done through a command — it’s getting tracked.
+- Whether you are inserting, updating, or deleting data, if it’s done through a command - it is getting tracked.
 
 ---
 

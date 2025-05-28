@@ -1,14 +1,14 @@
 
 # Policy Setup for Control Tracking
-With Smart DevOps, you're not just pushing changes blindly. Every step is tracked, giving you full visibility into what’s happening and when. This means you’ll always know:
+With Smart DevOps, you are not just pushing changes blindly. Every step is tracked, giving you full visibility into what is happening and when. This means you’ll always know:
 
-Who’s working on what — You can see exactly when an issue was assigned and to whom.
+Who is working on what - You can see exactly when an issue was assigned and to whom.
 
-What changes are being made — Every edit, create, delete, or deployment is recorded.
+What changes are being made - Every edit, create, delete, or deployment is recorded.
 
 ## Global Tracking Setting
 
-  Before you dive into the work, make sure global tracking is properly set up. These settings apply across your entire environment, so they’re really important.
+  Before you dive into the work, make sure global tracking is properly set up. These settings apply across your entire environment, so they are really important.
 
   - **Overall Setup**
     
@@ -43,7 +43,7 @@ What changes are being made — Every edit, create, delete, or deployment is rec
 
   In Smart DevOps, you can track all changes for regular objects that do not have identity columns.
 
-  This means even if a table or object doesn’t use an auto-generated primary key, Smart DevOps is still capable of capturing and versioning every update made to it.
+  This means even if a table or object does not use an auto-generated primary key, Smart DevOps is still capable of capturing and versioning every update made to it.
 
 ## Regular Objects - with identity columns
 
@@ -55,7 +55,7 @@ What changes are being made — Every edit, create, delete, or deployment is rec
 
   Smart DevOps also tracks all the changes made through integrator. 
 
-  No extra configuration needed — as long as tracking is enabled for the related object, all integrator-related changes will be captured automatically.
+  No extra configuration needed - as long as tracking is enabled for the related object, all integrator-related changes will be captured automatically.
 
 ## Special Use Cases
   - **Disable issue tracking in the middle of transaction**
@@ -65,7 +65,7 @@ What changes are being made — Every edit, create, delete, or deployment is rec
     This is especially helpful when:
 
     - You don’t want to track every step of a complex operation.
-    - You only care about the final outcome of a transaction —  not the entire chain of changes that lead up to it.
+    - You only care about the final outcome of a transaction -  not the entire chain of changes that lead up to it.
   
     Lets say you are creating a warehouse, there might be automatic generation of zones, areas and locations.
       
@@ -96,7 +96,7 @@ What changes are being made — Every edit, create, delete, or deployment is rec
 
     Smart DevOps provides flexibility when it comes to excluding specific pieces of data from tracking.
 
-    There may be situations where you don’t want every field or change to be tracked — for example, when certain columns like **descriptions or timestamps** are not critical to your version history.
+    There may be situations where you do not want every field or change to be tracked for example, when certain columns like **descriptions or timestamps** are not critical to your version history.
 
     - **How to do it for policies**
     
@@ -107,7 +107,7 @@ What changes are being made — Every edit, create, delete, or deployment is rec
 
     - **How to do it for dscmst**
 
-       If you don’t want to track the **DESCRIPTION** field (or any specific field), you can simply **enable the policy** related to that field.
+       If you do not want to track the **DESCRIPTION** field (or any specific field), you can simply **enable the policy** related to that field.
 
       Here's an example:
        | `polcod`                  | `polvar`                            | `polval`   | `rtstr1`                        |

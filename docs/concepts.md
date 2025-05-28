@@ -57,7 +57,7 @@ These ensure:
 
 ## Control Files for Identity-Based Tables
 
-A **control file (CTL)**instruct the system that what you need to do with that data.
+A **control file (CTL)** instruct the system that what you need to do with that data.
 
 ### Key Principles
 
@@ -70,7 +70,7 @@ A **control file (CTL)**instruct the system that what you need to do with that d
 **Triggers are the starting point of the tracking mechanism.**  
 Whenever we want to track changes in the system, we create a corresponding trigger.
 
-- These triggers are responsible for identifying when a specific change occurs — whether it's a **create**, **update**, or **remove** action.
+- These triggers are responsible for identifying when a specific change occurs - whether it's a **create**, **update**, or **remove** action.
 - The core idea is to track every change that results in the execution of a **MOCA command** at the end.
 
 #### How It Works:
