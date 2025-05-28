@@ -7,7 +7,7 @@ The steps below will guide you through how the issue assignment process works in
 
    
     <div style="text-align: left;">
-     <img src="../assets/image1.png"
+     <img src="./assets/image1.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -19,7 +19,7 @@ The steps below will guide you through how the issue assignment process works in
 
    
     <div style="text-align: left;">
-     <img src="../assets/image2.png"
+     <img src="./assets/image2.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -34,7 +34,7 @@ The steps below will guide you through how the issue assignment process works in
  3. Any changes made are recorded on the Issue Assignment screen. Modifications to commands are logged in **Files** with the corresponding object name, data changes in Integrator are logged in **Seamles** while changes made through GUI or MOCA are reflected in **Tables** 
 
     <div style="text-align: left;">
-     <img src="../assets/image3.png"
+     <img src="./assets/image3.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -45,7 +45,7 @@ The steps below will guide you through how the issue assignment process works in
  4. To finalize an issue, first click **Complete**. Then, based on what you need, choose the appropriate options. If you only want to commit your changes to the connected repository, enable the **Commit** option. If you only want to create a rollout without committing the changes, enable the **Rollout** option. If you want to do both—commit and create a rollout—make sure to enable both options. Once all required fields are filled, click **OK** to complete the process.
 
     <div style="text-align: left;">
-      <img src="../assets/image4.png"
+      <img src="./assets/image4.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
