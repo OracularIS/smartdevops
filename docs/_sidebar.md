@@ -9,6 +9,9 @@
 - [Use Cases](./usecases.md)
 - [Structure Of Control Files](./Controlfiles.md)
 - [Rollout Application](./rolloutapplication/overview.md)
+   - [Getting Started](./rolloutapplication/gettingstarted.md)
+   - [Rollout Actions](./rolloutapplication/operations.md)
+   - [Logs and Utilities](./rolloutapplication/logs.md)
 - [FAQ's](./faqs.md)
 <!--- [Controlled Object Layout](controlledobjectlayout.md)-->
 <!--- [Getting Started](./GettingStarted.md)-->
