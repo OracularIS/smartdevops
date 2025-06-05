@@ -6,29 +6,31 @@ Who is working on what - You can see exactly when an issue was assigned and to w
 
 What changes are being made - Every edit, create, delete, or deployment is recorded.
 
+
 ## Global Tracking Setting
 
-  Before you dive into the work, make sure global tracking is properly set up. These settings apply across your entire environment, so they are really important.
+Before you dive into the work, make sure global tracking is properly set up. These settings apply across your entire environment, so they are really important.
 
-  - **Overall Setup**
-    
-    To properly initialize tracking in Smart DevOps, you need to configure the overall setup and **enable the required policies**, especially the SETUP policy. This is essential for Smart DevOps to begin managing and monitoring changes effectively.
-    Here is a generic format to enable a Setup Policy:
+- **Overall Setup**
 
-    | `polcod`                  | `polvar` | `polval` |
-    |---------------------------|----------|----------|
-    | POLICY-NAME	 | SETUP    | ENABLED  |    
+  To properly initialize tracking in Smart DevOps, you need to configure the overall setup and **enable the required policies**, especially the SETUP policy. This is essential for Smart DevOps to begin managing and monitoring changes effectively.
+
+  Here is a generic format to enable a Setup Policy:
+
+  | `polcod`                  | `polvar` | `polval` |
+  |---------------------------|----------|----------|
+  | POLICY-NAME               | SETUP    | ENABLED  |
+
+  For example, enabling the setup policy for USR-OSSI-VERSION-CONTROL:
+
+  | `polcod`                  | `polvar` | `polval` |
+  |---------------------------|----------|----------|
+  | USR-OSSI-VERSION-CONTROL | SETUP    | ENABLED  |
+
+  Without enabling the `SETUP` policy, Smart DevOps will **not** begin tracking changes, so be sure this is the first step in your configuration.
 
 
-    For example, enabling the setup policy for USR-OSSI-VERSION-CONTROL :
-
-    | `polcod`                  | `polvar` | `polval` |
-    |---------------------------|----------|----------|
-    | USR-OSSI-VERSION-CONTROL | SETUP    | ENABLED  |
-
-    Without enabling the `SETUP` policy, Smart DevOps will **not** begin tracking changes, so be sure this is the first step in your configuration.
-
-  - **Enable tag for any object**
+- **Enable tag for any object**
 
     If you want to start tracking a specific object in Smart DevOps, you must first enable **object tracking**. 
 
@@ -49,23 +51,10 @@ What changes are being made - Every edit, create, delete, or deployment is recor
     - You ensure traceability and version control for every update.
 
 ## Policy setup for Version Control Systems
-   To enable version control functionality in Smart DevOps, the following setup policies must be properly configured. These policies ensure that versioning features such as commit tracking, branching, and script integration work seamlessly within the Smart DevOps environment.
+   To enable version control functionality in Smart DevOps, you must properly set up the related policies.
+    These policies ensure that versioning features such as commit tracking, branching, and script integration work seamlessly within the Smart DevOps environment.
 
 These settings are essential to connect your application with external version control tools and services like Git
-
-Here's a generic format was setting up the policies fro version control systems like GIT.
-
-| `polcod`                 | `polvar` | `polval`             | `rtstr1`              |
-|--------------------------|----------|----------------------|------------------------|
-| POLICY-NAME              | SETUP    | CONFIGURATION-KEY    | CONFIGURATION-VALUE    |
-
-**polcod:** Name of the policy group (e.g., USR-OSSI-VERSION-CONTROL)
-
-**polvar:** Always set to SETUP for configuration settings
-
-**polval:** Specific key that defines the configuration type (e.g., VERSION-CONTROL-SYSTEM)
-
-**rtstr1:** The actual value or setting to apply
 
 You need to enable these policies:
 
@@ -167,9 +156,9 @@ You need to enable these policies:
       | `polcod`                  | `polvar`          | `polval`          |
       |-------------------------|------------------|------------------|
       | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-MOV_ZONE  | DISABLE-ON-REMOVE |
-      
+
       Similary, you can stop tracking while adding data by setting the policy mentioned below
-     
+
       | `polcod`                  | `polvar`          | `polval`          |
       |-------------------------|------------------|------------------|
       | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-MOV_ZONE | DISABLE-ON-ADD |
@@ -178,37 +167,98 @@ You need to enable these policies:
   
   - **Excluding subset of data during tracking**
 
-    Smart DevOps provides flexibility when it comes to excluding specific pieces of data from tracking.
+    Smart DevOps provides flexibility when it comes to exclude specific data from tracking.
 
     There may be situations where you do not want every field or change to be tracked for example, when certain columns like **descriptions or timestamps** are not critical to your version history.
+  
+    - **Excluding an Entire Table from Tracking**
 
-    Here’s a generic format for policies that exclude tracking for specific fields in a table or object:
+      Smart DevOps allows you to exclude specific tables from tracking by setting policies.
 
-      | `polcod`                  | `polvar`                            | `polval`   | `rtstr1`                        |
-      |-------------------------|------------------------------------|----------|----------------------------------------|
-      | POLICY-NAME	 | OBJECT-TABLE-POLDAT       | EXCLUDE-COLNAM or EXCLUDE-POLCOD	 | FIELD-NAME|
+      To disable tracking for a table, create a policy entry where the **rtnum** is set to **0**. To re-enable tracking, set rtnum back to 1.
 
+      For example, to stop tracking changes to the `LES_MNU_OPT` table, set the policy as shown below. 
+      
+      This ensures that no insert, update, or delete operations on this table are recorded by the tracking system.
 
+      | `polcod`                 | `polvar`                   | `polval`       | `rtnum` |
+      |--------------------------|----------------------------|----------------|---------|
+      | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-LES_MNU_OPT   | EXCLUDE-POLCOD | 0       |
 
-    - **How to do it for policies**
-    
-      If you want to skip tracking for specific fields, you can simply **enable the policy** associated with that field like
-      | `polcod`                  | `polvar`                            | `polval`   | `rtstr1`                        |
-      |-------------------------|------------------------------------|----------|----------------------------------------|
-      | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-POLDAT       | EXCLUDE-POLCOD | ALLOC-LOC-LOCK|
+       You can follow the same approach to disable tracking for **any table** by replacing `LES_MNU_OPT` with the name of your target  table(s).  
 
-    - **How to do it for dscmst**
+      Just update the value of `OBJECT-TABLE-<TABLE_NAME>` in the `polvar` field accordingly.
 
-       If you do not want to track the **DESCRIPTION** field (or any specific field), you can simply **enable the policy** related to that field.
+    - **Exclude Description from Tracking**
 
-      Here's an example:
-       | `polcod`                  | `polvar`                            | `polval`   | `rtstr1`                        |
-      |-------------------------|------------------------------------|----------|----------------------------------------|
-      | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-DSCMST      | EXCLUDE-COLNAM | wh_id|
+      If you do not want to track the `DESCRIPTION`, Smart DevOps provides two approaches to achieve this:
+
+      1. **Remove the Description Table from Tracking**
+
+         If tracking description data is not required for your process, you can simply exclude the entire description table from tracking.
+
+          To do this, set the policy by disabling the table:
+
+          | `polcod`                 | `polvar`            | `polval`       | `rtnum` |
+          |--------------------------|---------------------|----------------|---------|
+          | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-DSCMST | EXCLUDE-POLCOD | 0       |
+
+          ---
+        2. **Disable Tracking for Specific Fields Only**
+
+           If you still want to track most changes in the table but exclude specific fields , you can selectively disable tracking for those fields by setting up policy related to it.
+
+            For example, while creating a warehouse, if you want to **exclude the `wh_id` field** from tracking in the `DSCMST` table:
+
+            | `polcod`                 | `polvar`            | `polval`       | `rtstr1` |
+            |--------------------------|---------------------|----------------|----------|
+            | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-DSCMST | EXCLUDE-COLNAM | wh_id    |
+            ---
+            You can list any desired **column name** in the `rtstr1` field to exclude it from tracking.
+
+    - **Excluding SYS_DSC_MST**
+
+        When excluding a dataset from tracking, it is important to consider any related tables that may automatically get updated alongside the primary table.
+
+        For example, if you're disabling tracking for a table like LES_MNU_OPT using a policy, remember that these tables may have associated descriptions stored in the SYS_DSC_MST table.
+
+        In such cases, simply turning off tracking for LES_MNU_OPT is not sufficient, you must also configure a separate policy to disable tracking for SYS_DSC_MST.  
+  
+        To do this, set the policy by disabling the table:
+
+        | `polcod`                 | `polvar`            | `polval`       | `rtnum` |
+        |--------------------------|---------------------|----------------|---------|
+         | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-SYS_DSC_MST | EXCLUDE-POLCOD | 0       |
+
+        ---       
+    - **How to Setup a Policy to Exclude a Field from Tracking**
+
+      Smart DevOps allows you tracking by excluding specific fields. This is useful when certain fields are not relevant for change tracking and can be safely omitted.
+
+      You can set up a policy to exclude specific fields in any table by using the generic format below:
+
+      | `polcod`                  | `polvar`                            | `polval`           | `rtstr1`         |
+      |---------------------------|--------------------------------------|--------------------|------------------|
+      | POLICY-NAME               | OBJECT-TABLE-POLDAT                 | EXCLUDE-COLNAM or EXCLUDE-POLCOD | FIELD-NAME        |
+
+      - `polcod`: The name of the version control policy, e.g., `USR-OSSI-VERSION-CONTROL`.
+      - `polvar`: Replace `POLDAT` with the actual table name for which the field exclusion is required.
+      - `polval`: Set this to either `EXCLUDE-COLNAM` (to exclude a column) or `EXCLUDE-POLCOD` (to exclude a table).
+      - `rtstr1`: Replace this with the field or column name you want to exclude from tracking.
+
+      #### Example
+
+      To skip tracking for the field `ALLOC-LOC-LOCK` in a table named `POLDAT`, your policy would look like this:
+
+      | `polcod`                  | `polvar`                            | `polval`        | `rtstr1`         |
+      |---------------------------|--------------------------------------|------------------|------------------|
+      | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-POLDAT                 | EXCLUDE-POLCOD   | ALLOC-LOC-LOCK   |
+
+      You can apply this same format to any other table by updating the `polvar` value to include your target table name, and replace `rtstr1` with the field you wish to exclude from tracking.
 
   - **How It Works Generally**
 
-     You can control what gets tracked by configuring tracking policies. These policies define which tables, columns, or objects should be excluded from version control.
+     You can control what gets tracked by setting tracking policies. These policies define which tables, columns, or objects should be excluded from version control.
 
     If you want to exclude specific data entries in a table like LOCMST, add a policy with trigger filter and required fields or keys based on your use case.
 
@@ -219,6 +269,8 @@ You need to enable these policies:
 
 
     Here's an example for location master (locmst)
+
+
       | `polcod`                  | `polvar`                            | `polval`   | `rtstr1`                        |
       |-------------------------|------------------------------------|----------|----------------------------------------|
       | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-LOCMST     | TRIGGER-FILTER | uc_ossiissue_filter_locmst|    
