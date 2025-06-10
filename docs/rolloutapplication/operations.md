@@ -6,7 +6,7 @@ In this section, you will learn how to create a new rollout, delete an existing 
 From the Dashboard, navigate to the **Projects** screen using the main sidebar.
 
  <div style="text-align: left;">
-    <img src="../assets/image41.png"
+    <img src="./assets/image41.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -18,7 +18,7 @@ From the Dashboard, navigate to the **Projects** screen using the main sidebar.
 This screen provides an overview of ongoing rollout activities and acts as the starting point for initiating new rollouts.
 
  <div style="text-align: left;">
-    <img src="../assets/image42.png"
+    <img src="./assets/image42.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -33,7 +33,7 @@ This screen provides an overview of ongoing rollout activities and acts as the s
 1. Select the required project from the **Select Project** dropdown.
 
  <div style="text-align: left;">
-    <img src="../assets/image43.png"
+    <img src="./assets/image43.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -45,7 +45,7 @@ This screen provides an overview of ongoing rollout activities and acts as the s
 2. Choose the appropriate version from the **Version** dropdown.
 
     <div style="text-align: left;">
-    <img src="../assets/image44.png"
+    <img src="./assets/image44.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -56,7 +56,7 @@ This screen provides an overview of ongoing rollout activities and acts as the s
 3. Click the **Create Rollout** button to proceed.
 
     <div style="text-align: left;">
-    <img src="../assets/image45.png"
+    <img src="./assets/image45.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -70,7 +70,7 @@ After clicking Create Rollout, you’ll be redirected to the Create Rollout page
 4. On the Create Rollout page, choose the platform by selecting either Windows or Linux.
 
 <div style="text-align: left;">
-<img src="../assets/image46.png"
+<img src="./assets/image46.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -81,7 +81,7 @@ After clicking Create Rollout, you’ll be redirected to the Create Rollout page
 5. From the **BugList** dropdown, select one or more relevant bug IDs to associate with the rollout.
 
     <div style="text-align: left;">
-    <img src="../assets/image47.png"
+    <img src="./assets/image47.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -92,7 +92,7 @@ After clicking Create Rollout, you’ll be redirected to the Create Rollout page
 6. Enter a brief description in the **Description** text box.
 
    <div style="text-align: left;">
-    <img src="../assets/image48.png"
+    <img src="./assets/image48.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -108,7 +108,7 @@ After clicking Create Rollout, you’ll be redirected to the Create Rollout page
 
 
    <div style="text-align: left;">
-    <img src="../assets/image49.png"
+    <img src="./assets/image49.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -131,7 +131,7 @@ To do this:
     **Accumulative Rollout** gathers all issues previously used to create rollouts for the selected project and combines them into a single rollout.
 
     <div style="text-align: left;">
-    <img src="../assets/image50.png"
+    <img src="./assets/image50.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -151,7 +151,7 @@ To view existing rollouts for a project:
 
 1. Select any number from the **# of Rollouts** column next to the desired project.
     <div style="text-align: left;">
-    <img src="../assets/image51.png"
+    <img src="./assets/image51.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -161,7 +161,7 @@ To view existing rollouts for a project:
 
 2. The list of rollouts associated with that specific project will be displayed on the screen.
     <div style="text-align: left;">
-    <img src="../assets/image52.png"
+    <img src="./assets/image52.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -179,7 +179,7 @@ To recreate a rollout:
 
 1. From the **# of Rollouts** column in the Project List, click on the number next to the desired project.
     <div style="text-align: left;">
-    <img src="../assets/image51.png"
+    <img src="./assets/image51.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -189,7 +189,7 @@ To recreate a rollout:
 
 2. In the list of existing rollouts, select the rollout you wish to recreate.
     <div style="text-align: left;">
-    <img src="../assets/image53.png"
+    <img src="./assets/image53.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -205,7 +205,7 @@ To recreate a rollout:
    - **Recreate**: Opens the **Create Rollout** screen, allowing you to revise and recreate the rollout.
 
     <div style="text-align: left;">
-    <img src="../assets/image54.png"
+    <img src="./assets/image54.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -216,7 +216,7 @@ To recreate a rollout:
 4. Update the required fields as needed.
 
     <div style="text-align: left;">
-    <img src="../assets/image55.png"
+    <img src="./assets/image55.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -227,7 +227,7 @@ To recreate a rollout:
 5. Click the **Create Rollout** button.
 
     <div style="text-align: left;">
-    <img src="../assets/image56.png"
+    <img src="./assets/image56.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -238,7 +238,7 @@ To recreate a rollout:
 After successful creation, a confirmation message will appear, indicating that the rollout has been recreated.
 
 <div style="text-align: left;">
-    <img src="../assets/image49.png"
+    <img src="./assets/image49.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -255,7 +255,7 @@ To delete an existing rollout:
 1. From the **# of Rollouts** column in the Project List, click on the number next to the desired project.
 
     <div style="text-align: left;">
-    <img src="../assets/image51.png"
+    <img src="./assets/image51.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -266,7 +266,7 @@ To delete an existing rollout:
 2. In the list of existing rollouts, select the rollout you want to delete. Once selected a top toolbar will appear with two options: **Delete** and **Recreate**.
 
     <div style="text-align: left;">
-    <img src="../assets/image57.png"
+    <img src="./assets/image57.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -281,7 +281,7 @@ To delete an existing rollout:
 
    
     <div style="text-align: left;">
-    <img src="../assets/image58.png"
+    <img src="./assets/image58.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -292,7 +292,7 @@ To delete an existing rollout:
 4. A confirmation dialog will appear. Click **YES** to confirm the deletion.
 
     <div style="text-align: left;">
-    <img src="../assets/image59.png"
+    <img src="./assets/image59.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -302,7 +302,7 @@ To delete an existing rollout:
 
 5. After confirmation, the rollout will be removed, and a success message will be displayed on the screen.
     <div style="text-align: left;">
-    <img src="../assets/image60.png"
+    <img src="./assets/image60.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -321,7 +321,7 @@ You can download rollout files either by selecting an entire rollout or by downl
 
 
     <div style="text-align: left;">
-    <img src="../assets/image51.png"
+    <img src="./assets/image51.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -331,7 +331,7 @@ You can download rollout files either by selecting an entire rollout or by downl
 2. In the list of rollouts, locate the required entry.
 
     <div style="text-align: left;">
-    <img src="../assets/image61.png"
+    <img src="./assets/image61.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -342,7 +342,7 @@ You can download rollout files either by selecting an entire rollout or by downl
 3. Click the **Zip/Tar** icon next to the rollout.
 
     <div style="text-align: left;">
-    <img src="../assets/image62.png"
+    <img src="./assets/image62.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -362,7 +362,7 @@ You can also download a rollout package tied to a specific bug included in the r
 
 
     <div style="text-align: left;">
-    <img src="../assets/image63.png"
+    <img src="./assets/image63.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -376,7 +376,7 @@ You can also download a rollout package tied to a specific bug included in the r
    - Move it to **Linux** for a Linux-compatible file.
 
        <div style="text-align: left;">
-        <img src="../assets/image64.png"
+        <img src="./assets/image64.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -386,7 +386,7 @@ You can also download a rollout package tied to a specific bug included in the r
 
 3. Click the **Download** button.
        <div style="text-align: left;">
-        <img src="../assets/image65.png"
+        <img src="./assets/image65.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
