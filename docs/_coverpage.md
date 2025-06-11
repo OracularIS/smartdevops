@@ -1,7 +1,6 @@
 <img src="./assets/logo.png" alt="Image description" height="80" style="object-fit: cover;">
 
 
-# Smart DevOps
 
  If you're ready to start managing development changes in the Blue Yonder (BY) environment with confidence, Smart DevOps is here to help.
 
