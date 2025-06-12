@@ -63,7 +63,7 @@ The steps below will guide you through how the issue assignment process works in
 To reopen a previously closed issue, update its status code. Issues marked as Completed are considered closed. To reopen them, change the status code from Completed to Active. This action reactivates the issue, making it open for further tracking. 
 
 <div style="text-align: left;">
-      <img src="../assets/image70.png"
+      <img src="./assets/image70.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"

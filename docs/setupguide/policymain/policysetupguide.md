@@ -1,17 +1,35 @@
 
-# Policy Setup for Control Tracking
-With Smart DevOps, you are not just pushing changes blindly. Every step is tracked, giving you full visibility into what is happening and when. This means you’ll always know:
+# Policy Setup Guide
+To begin working with Smart DevOps, it is essential to set the necessary policies. This document provides a comprehensive guide to all the required policies, along with examples and explanations to help you get started.
 
-Who is working on what - You can see exactly when an issue was assigned and to whom.
+Each policy listed here plays a crucial role in enabling Smart DevOps to track, manage, and control changes effectively across the BY-WMS environment.
 
-What changes are being made - Every edit, create, delete, or deployment is recorded.
-
-To get started with setting up policies and ensuring proper tracking, you can explore the guides below:
-
-- [Global Tracking Setting](globaltracking.md) - A comprehensive guide to setting up global tracking policies, including all the steps and best practices you need for full visibility and control.
-- [Policy Setup for Version Control Systems](gitpolicy.md) - Learn how to configure policies for Version Control Systems to ensure consistent and secure change management.
+Follow the sections below to set up policies for:
 
 
+- [Policies for Controlled Tracking](globaltracking.md)
+    - [Global Policy](globaltracking.md#overall-setup)
+    - [Warehouse Specific Policy](globaltracking.md#warehouse-specific-policy-setup)
+    - [Object Specific Policy](globaltracking.md#object-specific-policy-setup)
+    - [Row Specific Policy](globaltracking.md#including-specific-rows-for-tracking)
+
+- [Policies for Exclusion](globaltracking.md#policies-for-exclusions)
+    - [Exclude specific dscmst column](globaltracking.md#exclude-a-specific-column-from-tracking-dscmst)
+    - [Exclude specific sys_dsc_mst column](globaltracking.md#exclude-a-specific-column-from-tracking-sys_dsc_mst)
+    - [Exclude a Policy](globaltracking.md#exclude-a-policy)
+    - [Disable tracking for Child Tables](globaltracking.md#disabling-tracking-for-child-tables)
+
+- [Policies for Version Control Systems](gitpolicy.md) 
+    - [Enable Git as Version Control System](gitpolicy.md#enable-git-as-version-control-system)
+    - [Set Git Repository](gitpolicy.md#set-git-repository)
+    - [Set Active Git Branch](gitpolicy.md#set-git-repository)
+    - [Set Active Git Branch](gitpolicy.md#set-active-git-branch)
+    - [Set Main Git Branch](gitpolicy.md#set-main-git-branch)
+    - [Set Git Executable Path](gitpolicy.md#set-git-executable-path)
+
+---
+
+<br><br>
 
 
 
