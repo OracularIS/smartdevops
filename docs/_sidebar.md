@@ -2,7 +2,7 @@
 
 - [Home](./readme.md)
 - [Setup Guide](./setupguide/setupguide.md)
-   - [Policy Setup Guide](./setupguide/policymain/policysetupguide.md)
+   - [Policy Setup](./setupguide/policymain/policysetupguide.md)
       - [Policies for Controlled Tracking](./setupguide/policymain/policies/globaltracking.md)
       - [Policies for Exclusions](./setupguide/policymain/policies/exclusions.md)
       - [Policies for Version Control Systems](./setupguide/policymain/policies/gitpolicy.md)
