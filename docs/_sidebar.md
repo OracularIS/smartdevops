@@ -2,10 +2,8 @@
 
 - [Home](./readme.md)
 - [Setup Guide](./setupguide/setupguide.md)
-   - [Policy Setup for Control Tracking](./setupguide/policymain/policysetupguide.md)
-      - [Global Tracking Setting](./setupguide/policymain/globaltracking.md)
-      - [Policy Setup for Version Control Systems](./setupguide/policymain/gitpolicy.md)
-   - [Building Rollouts](./setupguide/issueassignment.md)
+   - [Policy Setup Guide](./setupguide/policymain/policysetupguide.md)
+   - [Issue Assignment](./setupguide/issueassignment.md)
    - [Version Control Integration](./setupguide/integration.md)
 - [Concepts](./concepts.md)
 - [Use Cases](./usecases.md)

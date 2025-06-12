@@ -26,9 +26,10 @@ Before you dive into the work, make sure global tracking is properly set up. The
 If you start tracking a specific object in Smart DevOps, you must first enable **object tracking**. 
 
  Here's a generic format for enabling a policy:
-| `polcod`                  | `polvar`                 | `polval` |`rtnum1`                 |
-|---------------------------|--------------------------|----------| --------------------------|
- POLICY-NAME	 | OBJECT-TABLE-TABLENAME	     | ENABLED  | 1 |
+
+ | `polcod`                  | `polvar`                 | `polval` |`rtnum1`                 |
+|---------------------------|--------------------------|----------|--------------------------|
+| POLICY-NAME | OBJECT-TABLE-TABLENAME      | ENABLED  | 1 |
 
 Here's an example to enable policy for table area master (aremst):
 
@@ -90,61 +91,74 @@ Here is an example for tracking a specifc row for location master (locmst)
 
 Only the rows matched by the filter function will be tracked.
 
-## Tracking Exclusions
+## Policies for Exclusions
 
-1. **Exclude a Specific Column from Tracking**
+### Exclude a Specific Column from Tracking (dscmst)
 
-    If you want to stop tracking changes made to a specific **column** in a table, you can do so by setting up a policy. This is useful when certain fields are not critical for use.
+  If you want to stop tracking changes made to a specific **column** in a table, you can do so by setting up a policy. This is useful when certain fields are not critical for use.
 
-    You can use this generic format for policy setup
-    | `polcod`                 | `polvar`                      | `polval`         | `rtstr1`       | `rtnum1` |
-    |--------------------------|-------------------------------|------------------|----------------|----------|
-    | POLICY-NAME              | OBJECT-TABLE-TABLENAME        | EXCLUDE-COLNAM   | COLUMN-NAME    | 1        |
+  You can use this generic format for policy setup
 
-    - Replace `TABLENAME` in `polvar` with your target table.
-    - Set `rtstr1` to the name of the **column you want to exclude**.
-    - Set `rtnum1` to `1` to enable the exclusion.
+  | `polcod`                 | `polvar`                      | `polval`         | `rtstr1`       | `rtnum1` |
+  |--------------------------|-------------------------------|------------------|----------------|----------|
+  | POLICY-NAME              | OBJECT-TABLE-TABLENAME        | EXCLUDE-COLNAM   | COLUMN-NAME    | 1       |
 
-    For example, to exclude the **wh_id** column from tracking in the dscmst table, you can set up the policy as shown below.
-    | `polcod`                 | `polvar`                  | `polval`         | `rtstr1` | `rtnum1` |
-    |--------------------------|----------------------------|------------------|----------|----------|
-    | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-DSCMST        | EXCLUDE-COLNAM   | wh_id   | 1        |
+  - Replace `TABLENAME` in `polvar` with your target table.
+  - Set `rtstr1` to the name of the **column you want to exclude**.
+  - Set `rtnum1` to `1` to enable the exclusion.
 
-    In this example, the description for the wh_id field in the dscmst table will not be tracked.
+  For example, to exclude the **wh_id** column from tracking in the dscmst table, you can set up the policy as shown below.
+
+  | `polcod`                 | `polvar`                  | `polval`         | `rtstr1` | `rtnum1` |
+  |--------------------------|----------------------------|------------------|----------|----------|
+  | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-DSCMST        | EXCLUDE-COLNAM   | wh_id   | 1        |
+
+  In this example, the description for the wh_id field in the dscmst table will not be tracked.
+
+### Exclude a Specific Column from Tracking (sys_dsc_mst)
+  If you want to exclude a specific column from being tracked in the SYS_DSC_MST table, you can do so by setting up a policy for it.
+
+  This is helpful when changes to certain description-level fields are not essential and can be skipped from tracking.
+
+  For example to exclude wh_id from being tracked in sys_dsc_mst the following policy must be setup.
+
+  | `polcod`                  | `polvar`                   | `polval`         | `rtstr1`   | `rtnum1` |
+  |-------------------------|----------------------------|----------------|----------|--------|
+  | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-SYS_DSC_MST | EXCLUDE-COLNAM | wh_id  | 1     |
 
 
-2. **Disabling Tracking for Related Tables**
+### Disabling Tracking for Child Tables
 
-    When excluding a dataset from tracking, it is important to consider any related tables that may automatically get updated alongside the primary table.
+  When excluding a dataset from tracking, it is important to consider any related tables that may automatically get updated alongside the primary table.
 
-    For example, if you're disabling tracking for a table like LES_MNU_OPT using a policy, remember that these tables may have associated descriptions stored in the **SYS_DSC_MST** table.
+  For example, if you're disabling tracking for a table like LES_MNU_OPT using a policy, remember that these tables may have associated descriptions stored in the **SYS_DSC_MST** table.
 
-    In such cases, simply turning off tracking for LES_MNU_OPT is not sufficient, you must also set up a separate policy to disable tracking for SYS_DSC_MST.  
+  In such cases, simply turning off tracking for LES_MNU_OPT is not sufficient, you must also set up a separate policy to disable related tracking for SYS_DSC_MST.  
 
-    To do this, set the policy by disabling the table:
+  To do this, set the policy by disabling the table:
 
-    | `polcod`                 | `polvar`            | `polval`       | `rtnum` |
-    |--------------------------|---------------------|----------------|---------|
-    | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-SYS_DSC_MST | ENABLED | 0       |
+  | `polcod`                  | `polvar`                    | `polval`         | `rtstr1`   | `rtnum1` |
+  |-------------------------|----------------------------|----------------|----------|--------|
+  | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-SYS_DSC_MST | EXCLUDE-COLNAM | opt_nam  | 1     |
 
-    - `rtnum1 = 1` → Tracking is **enabled** (ON)
-    - `rtnum1 = 0` → Tracking is **disabled** (OFF)
+  - `rtnum1 = 1` → Tracking is **enabled** (ON)
+  - `rtnum1 = 0` → Tracking is **disabled** (OFF)
 
-3. **Exclude a Policy**
+### Exclude a Policy
 
-    If you want to **exclude a specific policy**, you can set  it up by using the following format:
+  If you want to **exclude a specific policy**, you can set  it up by using the following format:
 
-    | `polcod`                  | `polvar`               | `polval`         | `rtstr1`         | `rtnum1` |
-    |---------------------------|------------------------|------------------|------------------|----------|
-    | USR-OSSI-VERSION-CONTROL  | OBJECT-TABLE-POLDAT    | EXCLUDE-POLCOD   | `<POLICY-NAME>`  | 1        |
+  | `polcod`                  | `polvar`               | `polval`         | `rtstr1`         | `rtnum1` |
+  |---------------------------|------------------------|------------------|------------------|----------|
+  | USR-OSSI-VERSION-CONTROL  | OBJECT-TABLE-POLDAT    | EXCLUDE-POLCOD   | `<POLICY-NAME>`  | 1        |
 
-    For example to exclude policy for Allocate Inventory following policy will be enabled
+  For example to exclude policy for Allocate Inventory following policy will be enabled
 
-    | `polcod`                  | `polvar`               | `polval`         | `rtstr1`          | `rtnum1` |
-    |---------------------------|------------------------|------------------|-------------------|----------|
-    | USR-OSSI-VERSION-CONTROL  | OBJECT-TABLE-POLDAT    | EXCLUDE-POLCOD   | ALLOCATE INV     | 1        |
+  | `polcod`                  | `polvar`               | `polval`         | `rtstr1`          | `rtnum1` |
+  |---------------------------|------------------------|------------------|-------------------|----------|
+  | USR-OSSI-VERSION-CONTROL  | OBJECT-TABLE-POLDAT    | EXCLUDE-POLCOD   | ALLOCATE INV     | 1        |
 
-    Setting `rtnum1` to `1` enables the exclusion of the specified policy from tracking.
+  Setting `rtnum1` to `1` enables the exclusion of the specified policy from tracking.
 
 
 
