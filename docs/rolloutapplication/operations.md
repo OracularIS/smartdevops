@@ -319,7 +319,6 @@ You can download rollout files either by selecting an entire rollout or by downl
 
 1. From the **# of Rollouts** column in the Project List, click on the rollout count next to the relevant project.
 
-
     <div style="text-align: left;">
     <img src="./assets/image51.png"
        alt="undirectedmenu"
@@ -328,6 +327,7 @@ You can download rollout files either by selecting an entire rollout or by downl
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
+
 2. In the list of rollouts, locate the required entry.
 
     <div style="text-align: left;">
@@ -396,3 +396,7 @@ You can also download a rollout package tied to a specific bug included in the r
 
 
 The file will begin downloading in the appropriate format for the selected platform.
+
+---
+
+<br><br>
