@@ -360,7 +360,6 @@ You can also download a rollout package tied to a specific bug included in the r
 
 1. From the rollout details screen, locate the specific bug entry from **# of Rollouts**
 
-
     <div style="text-align: left;">
     <img src="./assets/image63.png"
        alt="undirectedmenu"
@@ -385,8 +384,8 @@ You can also download a rollout package tied to a specific bug included in the r
       </div>
 
 3. Click the **Download** button.
-       <div style="text-align: left;">
-        <img src="./assets/image65.png"
+    <div style="text-align: left;">
+    <img src="./assets/image65.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
