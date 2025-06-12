@@ -7,25 +7,24 @@ Each policy listed here plays a crucial role in enabling Smart DevOps to track, 
 Follow the sections below to set up policies for:
 
 
-- **Policies for Controlled Tracking**
-    - [Global Policy](/policymain/policies/globaltracking?id=overall-setup)
-    - [Warehouse Specific Policy](/policymain/policies/globaltracking?id=warehouse-specific-policy-setup)
-    - [Object Specific Policy](/policymain/policies/globaltracking?id=object-specific-policy-setup)
-    - [Row Specific Policy](/policymain/policies/globaltracking?id=including-specific-rows-for-tracking)
+- [Policies for Controlled Tracking](/policymain/policies/globaltracking.md)
+    - Global Policy
+    - Warehouse Specific Policy
+    - Object Specific Policy
+    - Row Specific Policy
 
-- **Policies for Exclusion**
-    - [Exclude specific dscmst column](/policymain/policies/exclusions?id=exclude-a-specific-column-from-tracking-dscmst)
-    - [Exclude specific sys_dsc_mst column](/policymain/policies/exclusions?id=exclude-a-specific-column-from-tracking-sys_dsc_mst)
-    - [Exclude a Policy](/policymain/policies/exclusions?id=exclude-a-policy)
-    - [Disable tracking for Child Tables](/policymain/policies/exclusions?id=disabling-tracking-for-child-tables)
+- [Policies for Exclusion](/policymain/policies/exclusions.md)
+    - Exclude specific dscmst column
+    - Exclude specific sys_dsc_mst column
+    - Exclude a Policy
+    - Disable tracking for Child Tables
 
-- **Policies for Version Control Systems**
-    - [Enable Git as Version Control System](/policymain/policies/gitpolicy?id=enable-git-as-version-control-system)
-    - [Set Git Repository](/policymain/policies/gitpolicy?id=set-git-repository)
-    - [Set Active Git Branch](/policymain/policies/gitpolicy?id=set-active-git-branch)
-    - [Set Main Git Branch](/policymain/policies/gitpolicy?id=set-main-git-branch)
-    - [Set Git Executable Path](/policymain/policies/gitpolicy?id=set-git-executable-path)
-
+- [Policies for Version Control Systems](/policymain/policies/gitpolicy.md)
+    - Enable Git as Version Control System
+    - Set Git Repository
+    - Set Active Git Branch
+    - Set Main Git Branch
+    - Set Git Executable Path
 ---
 
 <br><br>
