@@ -13,6 +13,7 @@ In BY WMS, development and configuration have a remarkably close relationship. M
 - Repeatable process to reduce manual export errors from a user.
 - End-to-end management: from making the change to managing the data extraction, committing to a repository, and building a rollout.
 - Provide visibility of the changes against the change identifier.
+- When a table is overridden, Smart DevOps logs the primary key as well as the next key in separate columns within the OSSI log table, ensuring complete traceability of key changes
 
 ---
 
