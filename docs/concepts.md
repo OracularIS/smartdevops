@@ -6,10 +6,8 @@ Earlier, all commits were done manually, making the process time consuming and p
 Many WMS tables use auto-generated identity columns (IDs) as primary keys. These IDs are unique to each environment (like development or production) and are not manually assigned. This creates serious issues when moving data across environments:
 
 - The same ID might point to different records in each environment.
-
 - This can lead to conflicts, data corruption, or broken references.
-
-- Developers had to manually adjust and trace these IDs, which was inefficient and risky.
+- Developers had to manually adjust and trace these IDs, which was   inefficient and risky.
 
 ## Our Solution
 
@@ -34,8 +32,8 @@ The following key features were introduced in Smart DevOps to overcome earlier c
 
     To enable precise and meaningful tracking, **descriptive views** are created for identity-based tables.
 
-    - The views typically include key **codes**, their associated **descriptions**, and all other necessary fields relevant to tracking.
-    - Tracking is performed on the basis of **codes and descriptions**, ensuring clarity.
+    - The views typically include key codes, their associated descriptions, and all other necessary fields relevant to tracking.
+    - Tracking is performed on the basis of codes and descriptions, ensuring clarity.
 
      This approach is especially useful for data  where identifying records by ID alone is not user-friendly.
 
@@ -53,8 +51,8 @@ The following key features were introduced in Smart DevOps to overcome earlier c
 
     Use the following best practices when dealing with identity-based tables:
 
-    - Avoid using `INSERT`, `UPDATE`, or `DELETE` directly.
-    - Call commands like `Create Movement Zone`, passing relevant arguments **without IDs**.
+    - Avoid using **INSERT**, **UPDATE**, or **DELETE** directly.
+    - Call commands like Create Movement Zone, passing relevant arguments **without IDs**.
     - IDs are generated internally by the system to avoid environment-based conflicts.
 
 6. **Regular Objects - without identity columns**
@@ -74,19 +72,21 @@ The following key features were introduced in Smart DevOps to overcome earlier c
     Smart DevOps also tracks all the changes made through integrator. 
 
     No extra configuration needed - as long as tracking is enabled for the related object, all integrator-related changes will be captured automatically.
+
 ## Limitations
 
 While Smart DevOps provides robust tracking , there are some limitations to be aware of:
 
 - **Commands Not Tracked**  
   Actions performed using the following MOCA commands are **not tracked**:
-  - `create record`
-  - `change record`
-  - `remove record`  
+  - create record
+  - change record
+  - remove record
+
   These commands bypass the Smart DevOps tracking mechanism.
 
 - **SQL-Based Changes Not Tracked**  
-  Any data modifications made directly through **SQL queries** (e.g., `INSERT`, `UPDATE`, `DELETE`) are **not tracked** by Smart DevOps.
+  Any data modifications made directly through **SQL queries** (e.g., INSERT, UPDATE, DELETE) are **not tracked** by Smart DevOps.
 
 
 ---

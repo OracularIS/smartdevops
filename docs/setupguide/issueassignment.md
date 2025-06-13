@@ -28,7 +28,6 @@ The steps below will guide you through how the issue assignment process works in
        </div>
 
 - Each screen or environment allows only one active issue at a time to maintain clarity and traceability. 
-
 - Users can view assigned issues, making it easy to identify who is responsible for a change. 
  
  3. Any changes made are recorded on the Issue Assignment screen. Modifications to commands are logged in **Files** with the corresponding object name, data changes in Integrator are logged in **Seamles** while changes made through GUI or MOCA are reflected in **Tables** 
@@ -54,9 +53,7 @@ The steps below will guide you through how the issue assignment process works in
       </div>
 
 - Change tracking can be disabled when necessary, offering flexibility in specific scenarios.  
-
 - The system supports granular control over tracking policies (e.g., dscmst, configuration flags). 
-
 - Unauthorized changes are prevented unless they are explicitly linked to an assigned issue, enforcing discipline in the development workflow. 
 
 ## Reopening a Closed Issue

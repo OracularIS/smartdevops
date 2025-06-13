@@ -1,5 +1,5 @@
 
-# Policy Setup Guide
+# Policy Setup 
 To begin working with Smart DevOps, it is essential to set the necessary policies. This document provides a comprehensive guide to all the required policies, along with examples and explanations to help you get started.
 
 Each policy listed here plays a crucial role in enabling Smart DevOps to track, manage, and control changes effectively across the BY-WMS environment.

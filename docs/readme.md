@@ -21,10 +21,10 @@ In BY WMS, development and configuration have a remarkably close relationship. M
 
 - One comprehensive toolset and methodology.
 - The client is not re-inventing the wheel, nor needing to develop a new methodology.
-- Works with industry-standard tools like **JIRA**, **GIT**, etc.
-- **Rollout Builder** builds the rollout in standard BY methodology for easy deployment.
-- Build a rollout for a given change identifier or multiple ones based on a **Sprint schedule**.
-- Supports **REFS development**.
+- Works with industry-standard tools like JIRA, GIT, etc.
+- Rollout Builder builds the rollout in standard BY methodology for easy deployment.
+- Build a rollout for a given change identifier or multiple ones based on a Sprint schedule.
+- Supports REFS development.
 - All development activities and configurations are tracked.
 
 
