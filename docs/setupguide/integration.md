@@ -2,6 +2,7 @@
 SmartDevOps integrates seamlessly with Git-based version control systems to help you manage and track changes effectively. This section will walk you through how to create a new Git branch, commit your changes, and verify them in Bitbucket.
 
 ## GIT
+The following instructions will help you set up your workspace, create a dedicated branch for your task, and manage changes using Git.
 
 ### Create a New Git Branch
 
@@ -9,7 +10,7 @@ SmartDevOps integrates seamlessly with Git-based version control systems to help
 
    1. **Organize your workspace**
 
-      - On your server, navigate to the `gitbx` repository.
+      - On your server, navigate to the **gitbx** repository.
       - Create a folder with your **username**.
       - Inside that folder, follow this structure:
 
@@ -35,7 +36,7 @@ SmartDevOps integrates seamlessly with Git-based version control systems to help
 
   After completing your development changes, you can now commit changes in Issue Assignment.
 
-  To learn more about Issue Assignment, follow [Issue Assignment](./issueassignment.md)
+  To learn more about Issue Assignment, follow [Issue Assignment](/setupguide/issueassignment.md)
 
 ### Verify the Commit in Bitbucket
 

@@ -13,9 +13,9 @@ In some cases, it may be necessary to exclude certain data from tracking in Smar
   |--------------------------|-------------------------------|------------------|----------------|----------|
   | POLICY-NAME              | OBJECT-TABLE-TABLENAME        | EXCLUDE-COLNAM   | COLUMN-NAME    | 1       |
 
-  - Replace `TABLENAME` in `polvar` with your target table.
-  - Set `rtstr1` to the name of the **column you want to exclude**.
-  - Set `rtnum1` to `1` to enable the exclusion.
+  - Replace **TABLENAME** in polvar with your target table.
+  - Set **rtstr1** to the name of the column you want to exclude.
+  - Set **rtnum1** to 1 to enable the exclusion.
 
   For example, to exclude the **wh_id** column from tracking in the dscmst table, you can set up the policy as shown below.
 
@@ -60,7 +60,7 @@ In some cases, it may be necessary to exclude certain data from tracking in Smar
 
   | `polcod`                  | `polvar`               | `polval`         | `rtstr1`         | `rtnum1` |
   |---------------------------|------------------------|------------------|------------------|----------|
-  | USR-OSSI-VERSION-CONTROL  | OBJECT-TABLE-POLDAT    | EXCLUDE-POLCOD   | `<POLICY-NAME>`  | 1        |
+  | USR-OSSI-VERSION-CONTROL  | OBJECT-TABLE-POLDAT    | EXCLUDE-POLCOD   | POLICY-NAME  | 1        |
 
   For example to exclude policy for Allocate Inventory following policy will be enabled
 

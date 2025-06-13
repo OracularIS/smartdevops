@@ -8,9 +8,7 @@
 
 ## Data Changes 
 - Any data change made through the portal or directly from the MOCA Client is logged and tracked by Smart DevOps.
-
 - This is because all data operations are ultimately executed through underlying MOCA commands, regardless of the interface used.
-
 - Whether you are inserting, updating, or deleting data, if it’s done through a command - it is getting tracked.
 
 ---

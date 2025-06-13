@@ -80,15 +80,11 @@ Here is a general format for the policy you need to setup
 - Replace `TABLENAME` in `polvar` with the actual table you want to track.
 - `rtstr1` should contain the name of the function or command that defines which rows to include for tracking.
 
----
-
 Here is an example for tracking a specifc row for location master (locmst)
 
 | `polcod`                 | `polvar`                      | `polval`        | `rtstr1`                        |
 |--------------------------|-------------------------------|------------------|----------------------------------|
 | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-LOCMST           | TRIGGER-FILTER   | uc_ossiissue_filter_locmst       |
-
----
 
 Only the rows matched by the filter function will be tracked.
   

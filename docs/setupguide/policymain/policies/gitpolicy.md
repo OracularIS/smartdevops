@@ -19,8 +19,7 @@ Use case: Sets Git as the backend for version control.
 |--------------------------|----------|----------------------|------------------------|
 | USR-OSSI-VERSION-CONTROL             | SETUP    | GIT-REPO   |  REPOSITORYNAME  
 
- Use case: Specifies the remote Git repository where changes will be committed.
-
+Use case: Specifies the remote Git repository where changes will be committed.
 Replace the REPOSITORYNAME in rtsrt1 with your own repository name where changes will be committed.
 
 ### Set Active Git Branch
@@ -30,7 +29,6 @@ Replace the REPOSITORYNAME in rtsrt1 with your own repository name where changes
 | USR-OSSI-VERSION-CONTROL             | SETUP    | GIT-ACTIVE-BRANCH   | BRANCHNAME    |
 
 Use case: Defines the current working branch used for commits.
-
 Replace the BRANCHNAME in rtsrt1 with your own branch name used for commits.
 
 ### Set Main Git Branch
@@ -39,7 +37,6 @@ Replace the BRANCHNAME in rtsrt1 with your own branch name used for commits.
 | USR-OSSI-VERSION-CONTROL             | SETUP    | GIT-MAIN-BRANCH   | BRANCHNAME    |
 
 Use case: Identifies the main (default) branch of the repository.
-
 Replace the BRANCHNAME in rtsrt1 with your own branch name.
 
 ### Set Git Executable Path
@@ -48,8 +45,7 @@ Replace the BRANCHNAME in rtsrt1 with your own branch name.
 |--------------------------|----------|----------------------|------------------------|
 | USR-OSSI-VERSION-CONTROL             | SETUP    | GIT-EXEC-PATH   | PATH    |
 
-Use case: Points to the executable path of the Git CLI used by the system.
-    
+Use case: Points to the executable path of the Git CLI used by the system.   
 Replace PATH in rtsrt1 with executable directory path of your system for GIT.
 
     
