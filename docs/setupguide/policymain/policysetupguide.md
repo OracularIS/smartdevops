@@ -12,6 +12,7 @@ Follow the sections below to set up policies for:
     - Warehouse Specific Policy
     - Object Specific Policy
     - Row Specific Policy
+    - Rollout Naming Convention Policy
 
 - [Policies for Exclusion](/setupguide/policymain/policies/exclusions.md)
     - Exclude specific dscmst column

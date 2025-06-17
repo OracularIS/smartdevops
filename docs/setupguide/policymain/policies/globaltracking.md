@@ -66,7 +66,6 @@ Once this policy is enabled:
 - You ensure traceability and version control for every update.
 
 
-
 ## Row Specific Policy
 
 If you want to include only specific rows for tracking, you can do this by setting up a policy using a **trigger filter**. This allows you to define logic that selects which data should be tracked from a particular table.
@@ -87,6 +86,71 @@ Here is an example for tracking a specifc row for location master (locmst)
 | USR-OSSI-VERSION-CONTROL | OBJECT-TABLE-LOCMST           | TRIGGER-FILTER   | uc_ossiissue_filter_locmst       |
 
 Only the rows matched by the filter function will be tracked.
+
+## Rollout Naming Convention Policy
+To ensure consistent naming for rollouts, you can set up a policy that defines the naming convention.  
+
+Here is how the naming is structured:
+
+- **ROLLOUT-NAME-PREFIX-EXPR**
+
+   This defines the initial part of the rollout name
+
+   | `polcod`                 | `polvar`                      | `polval`        | `rtstr1`                        |
+   |--------------------------|-------------------------------|------------------|----------------------------------|
+  | USR-OSSI-VERSION-CONTROL | SETUP           | ROLLOUT-NAME-PREFIX-EXPR  | 'USR001_QUASAR_CONFIG'       |
+
+  You can update the rtstr1 value with your desired prefix to match your naming needs.
+
+- **ROLLOUT-NAME-SEP**
+
+  This policy defines the separator character (such as an underscore _, dash -, or any other symbol) that appears between the components of the rollout name. The separator ensures clarity and consistency in rollout naming. 
+
+  | `polcod`                 | `polvar`                      | `polval`        | `rtstr1`                        |
+  |--------------------------|-------------------------------|------------------|----------------------------------|
+  | USR-OSSI-VERSION-CONTROL | SETUP           | ROLLOUT-NAME-SEP  | __       |
+
+  The `rtstr1` value can be modified by the user as needed to match the preferred naming format.
+
+- **ROLLOUT-NAME-MINOR-VERSION-LOOKUP-EXPR**
+
+  The ROLLOUT-NAME-MINOR-VERSION-LOOKUP-EXPR variable is used to define the final part of the rollout name. It allows you to build this portion of the name using a combination of expressions, system variables, and separators.
+
+  | `polcod`                 | `polvar`                      | `polval`        | `rtstr1`                        |
+  |--------------------------|-------------------------------|------------------|----------------------------------|
+  | USR-OSSI-VERSION-CONTROL | SETUP           | ROLLOUT-NAME-MINOR-VERSION-LOOKUP-EXPR  | @uc_rollout_name_sep \|\| '*'      |
+
+  The `rtstr1` value can be modified by the user as needed to match the preferred name. 
+
+- **ROLLOUT-NAME-MINOR-VERSION-POS**
+
+  The ROLLOUT-NAME-MINOR-VERSION-POS variable is used to define the position of the minor version in the rollout name. 
+  
+  This helps structure the name properly by indicating where the minor version should appear in relation to other elements like the prefix and major version.
+
+  | `polcod`                 | `polvar` | `polval`                        | `rtstr1` | `rtnum1` |
+  |--------------------------|----------|----------------------------------|----------|----------|
+  | USR-OSSI-VERSION-CONTROL | SETUP    | ROLLOUT-NAME-MINOR-VERSION-POS | This is position of minor version        | 7        |
+
+  The `rtnum1` value can be modified by the user to adjust where the minor version appears in the name format.
+
+- **ROLLOUT-NAME-MAJOR-VERSION-POS**
+
+  This variable defines the position where the major version number should appear in the rollout name. By specifying this position, the system knows exactly where to insert the major version in the final name format.
+
+  | `polcod`                 | `polvar` | `polval`                         | `rtstr1` | `rtnum1` |
+  |--------------------------|----------|----------------------------------|----------|----------|
+  | USR-OSSI-VERSION-CONTROL | SETUP    | ROLLOUT-NAME-MAJOR-VERSION-POS  | This is the position of major version in the rollout name       | 5        |
+
+  You can modify the `rtnum1` value to set your desired major version position in the rollout name.
+
+
+
+
+
+
+
+
   
 ---
 
