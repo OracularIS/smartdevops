@@ -45,7 +45,13 @@ The following key features were introduced in Smart DevOps to overcome earlier c
     - Safe and validated deletion operations  
     - Dependent records are protected from accidental removal
 
-5. **Control Files for Identity-Based Tables**
+5. **Policy Deletion**
+
+   Previously, deletions of policy records were not being tracked correctly because the primary key was incomplete during the operation.
+   
+   This issue has now been resolved through enhancements in our override logic, which ensures that policy deletions are handled consistently and tracked properly.
+
+6. **Control Files for Identity-Based Tables**
 
     A control file (CTL) instruct the system that what you need to do with that data.
 
@@ -55,19 +61,19 @@ The following key features were introduced in Smart DevOps to overcome earlier c
     - Call commands like Create Movement Zone, passing relevant arguments **without IDs**.
     - IDs are generated internally by the system to avoid environment-based conflicts.
 
-6. **Regular Objects - without identity columns**
+7. **Regular Objects - without identity columns**
 
    In Smart DevOps, you can track all changes for regular objects that do not have identity columns.
 
     This means even if a table or object does not use an auto-generated primary key, Smart DevOps is still capable of capturing and versioning every update made to it.
 
-7. **Regular Objects - with identity columns**
+8. **Regular Objects - with identity columns**
 
     Objects with identity columns (such as auto-incrementing primary keys) are fully supported.
     Smart DevOps will track row insertions, updates and eletions
     based on the identity column, ensuring precise version control.
 
-8. **Integrator Objects**
+9. **Integrator Objects**
 
     Smart DevOps also tracks all the changes made through integrator. 
 

@@ -12,7 +12,7 @@ However, if the drag-and-drop operation is repeated multiple times, there are ca
 
  This behavior occurs inconsistently but can lead to loss of rules. 
 
-  Click [here](./assets/DOC_RULE_BUG.pdf) to see how the issue was replicated.
+  Click <a href="assets/DOC_RULE_BUG.pdf" target="_blank">here</a> to see how the issue was replicated.
 
  ---
 
