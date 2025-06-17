@@ -1,24 +1,22 @@
 # Use Cases
+This section outlines how Smart DevOps tracks different types of changes  including code, data, and integrator modifications and how you can view these tracked changes using both the portal and Fat Client interfaces.
 
 ## Code Changes
 - When code is changed directly through the MOCA Client, the version control system automatically tracks these changes.
 - This includes any script, logic, or configuration modified within the client interface
 
----
 
 ## Data Changes 
 - Any data change made through the portal or directly from the MOCA Client is logged and tracked by Smart DevOps.
 - This is because all data operations are ultimately executed through underlying MOCA commands, regardless of the interface used.
 - Whether you are inserting, updating, or deleting data, if it’s done through a command - it is getting tracked.
 
----
 
 ## Integrator Changes
 - Similarly, any changes performed via integrators are also tracked — provided the underlying action triggers a MOCA command.
 - Changes made to integrator components such as events, IFDs (Interface Definitions), mappings, etc., are also tracked by Smart DevOps.
 - This ensures that integrations are version-controlled and traceable just like code and data.
 
----
 
 ## View Changes 
 You can view the changes from any of the following interfaces:
