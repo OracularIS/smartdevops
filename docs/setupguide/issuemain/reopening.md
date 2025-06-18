@@ -1,4 +1,4 @@
-# Reopening a Closed Issue
+# Reopen a Closed Issue
  Issues marked as Completed are considered closed. 
 
  To reopen a closed issue follow the following steps:

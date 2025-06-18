@@ -37,7 +37,7 @@ You can filter issues using the input fields available in the **General** tab. H
 
 - **Description** 
 
-    Enter the *complete* description text to retrieve matching issues. Partial keywords will not return results.
+    Enter the **complete** description text to retrieve matching issues. Partial keywords will not return results.
 
     <div style="text-align: left;">
      <img src="./assets/image73.png"
@@ -50,7 +50,7 @@ You can filter issues using the input fields available in the **General** tab. H
 
 - **Status** 
 
-     Select the desired status from the dropdown (*Active (A)*, *Inactive (I)*, or *Complete (C)*), then click **Find** to filter accordingly.
+     Select the desired status from the dropdown (Active (A), Inactive (I), or Complete (C)), then click **Find** to filter accordingly.
         
     <div style="text-align: left;">
      <img src="./assets/image74.png"
@@ -83,10 +83,69 @@ Here is how filtering works:
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
-- Select the desired column from the list. 
-- The system will then filter the **rows in the grid** where that keyword appears in the selected **column only**.
+- Select the desired column from the list  e.g., `test` in Issue Description.
+
+    <div style="text-align: left;">
+     <img src="./assets/image84.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
+- The system will then filter the **rows in the grid** where that keyword (e.g., `test`) appears in the selected **column only**.
+
+    <div style="text-align: left;">
+     <img src="./assets/image85.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
+
 
 ### Filter data using Wildcards
+
+While filtering data in the Quick Grid Filter, you can use the `*` wildcard in the search bar to make your search more flexible:
+
+- To find issues where the description **starts with** a certain word, use: `word*`  
+  → Example: `test*` will match "test case", "testing", etc.
+      <div style="text-align: left;">
+     <img src="./assets/image86.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
+
+- To find descriptions that **end with** a specific word, use: `*word`  
+  → Example: `*test` will match "test issue", "test Git commit", etc.
+      <div style="text-align: left;">
+     <img src="./assets/image87.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
+- To find descriptions that **contain** a word anywhere, use: `*word*` or simply enter the word.  
+  → Example: `*test*` or `test`  will match "Rollout Testing", "testing process", "pretest", etc.
+        <div style="text-align: left;">
+     <img src="./assets/image88.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
+This method helps you quickly locate relevant issues without needing to enter the full description text.
 
 ## Filter Issue Data through Fat Client
 The data filtering process in the Fat Client works the same way as the [Filtering via the General Tab](#1-filtering-via-the-general-tab) in the Portal.
