@@ -208,7 +208,7 @@ This structured view helps in identifying and verifying all changes made in the 
 ---
 
 ## Create Rollout 
-You can create Rollout from any of the following interfaces:
+You can create Rollout without integrated version control from any of the following interfaces:
 - **From Portal**
 
     To create rollout from the thin Client, follow these steps:
