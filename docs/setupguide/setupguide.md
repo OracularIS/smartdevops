@@ -3,5 +3,5 @@ This guide will walk you through how to properly set up and manage tracking in S
 
 ## Main components
 - [Policy Setup](/setupguide/policymain/policysetupguide.md)
-- [Issue Assignment](/setupguide/issueassignment.md)
+- [Issue Assignment](/setupguide/issuemain/issueassignment.md)
 - [Version Control Integration](/setupguide/integration.md)

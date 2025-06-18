@@ -9,8 +9,8 @@
 
    - [Issue Assignment](./setupguide/issuemain/issueassignment.md)
       - [Creating and Closing an Issue](./setupguide/issuemain/creating.md)
-      - [Reopening a Closed Issue](./setupguide/issuemain/reopening.md)
-      - [Data Filtration](./setupguide/issuemain/filtering.md)
+      - [Reopen a Closed Issue](./setupguide/issuemain/reopening.md)
+      - [Filter Issue Data](./setupguide/issuemain/filtering.md)
    - [Version Control Integration](./setupguide/integration.md)
 - [Concepts](./concepts.md)
 - [Use Cases](./usecases.md)
