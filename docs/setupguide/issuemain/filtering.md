@@ -1,11 +1,11 @@
-# Data Filtration 
+# Filter Issue Data 
 
 This section covers the available methods for filtering issue data in Smart DevOps helping you quickly find the information you need.
 
-## Filtering Issue Data via Portal
+## Filter Issue Data through Portal
 The Portal offers two ways to filter issue data. Each method is described below.
 
-### 1. Filtering via the General Tab
+### 1. Filteration - General Tab
 
 You can filter issues using the input fields available in the **General** tab. Here's how it works for each field:
 
@@ -61,7 +61,7 @@ You can filter issues using the input fields available in the **General** tab. H
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
-### 2.  Filter via Grid Search Box
+### 2.  Filteration - Quick Grid Filter
 The **search box** located at the top-right corner of the data grid is used to filter records based on columns within the grid.
 
 Here is how filtering works:
@@ -83,12 +83,15 @@ Here is how filtering works:
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
-- Select the desired column from the list. The system will then filter the **rows in the grid** where that keyword appears in the selected **column only**.
+- Select the desired column from the list. 
+- The system will then filter the **rows in the grid** where that keyword appears in the selected **column only**.
 
-## Filtering Issue Data via Fat Client
+### Filter data using Wildcards
+
+## Filter Issue Data through Fat Client
 The data filtering process in the Fat Client works the same way as the [Filtering via the General Tab](#1-filtering-via-the-general-tab) in the Portal.
 
-The key difference lies in how the **Description** field is handled.
+### Filter data using Wildcards
 
  Unlike the Portal which requires you to enter the full description text for filtering the Fat Client allows more **flexible searching** by supporting partial text and keyword matching.
 

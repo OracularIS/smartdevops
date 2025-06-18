@@ -22,7 +22,7 @@ This section explains how to assign a new issue, track related changes, close th
     - Inactive
     - Complete
     
-    Please note that tracking is only performed for issues marked as **Active**. Add a brief Issue Description and click Save to complete the assignment. 
+    Add a brief **Issue Description** and click **Save** to complete the assignment. 
 
     <div style="text-align: left;">
      <img src="./assets/image2.png"
@@ -33,8 +33,10 @@ This section explains how to assign a new issue, track related changes, close th
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
        </div>
 
-- Each screen or environment allows only one active issue at a time to maintain clarity and traceability. 
-- Users can view assigned issues, making it easy to identify who is responsible for a change. 
+
+    > **Note**  
+    > - Tracking is only performed for issues marked as **Active**.  
+    > - Each screen or environment allows only **one active issue** at a time to maintain clarity and traceability. 
  
  3. Any changes made are recorded on the Issue Assignment screen.
 
