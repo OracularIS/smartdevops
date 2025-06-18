@@ -7,7 +7,10 @@
       - [Policies for Exclusions](./setupguide/policymain/policies/exclusions.md)
       - [Policies for Version Control Systems](./setupguide/policymain/policies/gitpolicy.md)
 
-   - [Issue Assignment](./setupguide/issueassignment.md)
+   - [Issue Assignment](./setupguide/issuemain/issueassignment.md)
+      - [Creating and Closing an Issue](./setupguide/issuemain/creating.md)
+      - [Reopening a Closed Issue](./setupguide/issuemain/reopening.md)
+      - [Data Filtration](./setupguide/issuemain/filtering.md)
    - [Version Control Integration](./setupguide/integration.md)
 - [Concepts](./concepts.md)
 - [Use Cases](./usecases.md)

@@ -1,11 +1,11 @@
-# Building Rollouts Without Integrated Version Control
-Smart DevOps enables change tracking by issue assignment of a specific issue through GUI, ensuring accountability and control across all environments — whether Legacy, Web, or MOCA Client. 
+# Creating and Closing an Issue
 
-The steps below will guide you through how the issue assignment process works in the GUI, helping you track changes effectively and with ease. 
+This section explains how to assign a new issue, track related changes, close the issue once complete, and generate a rollout all from the GUI.
+
+## Creating an Issue
 
 1. Navigate to **Configuration → Extensions → OSSI – Issue Assignment** to access the Issue Assignment screen. 
 
-   
     <div style="text-align: left;">
      <img src="./assets/image1.png"
        alt="undirectedmenu"
@@ -15,9 +15,15 @@ The steps below will guide you through how the issue assignment process works in
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
-2. To create a new issue assignment, click on New, then enter the User ID and Issue ID. Select the appropriate Status Code—Active, Inactive, or Complete. Please note that tracking is only performed for issues marked as Active. Add a brief Issue Description and click Save to complete the assignment. 
+2. To create a new issue, click on **New**, then enter the **User ID**   and **Issue ID**.
 
-   
+    Select the appropriate Status Code. The following status options are available via dropdown:
+    - Active
+    - Inactive
+    - Complete
+    
+    Please note that tracking is only performed for issues marked as **Active**. Add a brief Issue Description and click Save to complete the assignment. 
+
     <div style="text-align: left;">
      <img src="./assets/image2.png"
        alt="undirectedmenu"
@@ -30,7 +36,11 @@ The steps below will guide you through how the issue assignment process works in
 - Each screen or environment allows only one active issue at a time to maintain clarity and traceability. 
 - Users can view assigned issues, making it easy to identify who is responsible for a change. 
  
- 3. Any changes made are recorded on the Issue Assignment screen. Modifications to commands are logged in **Files** with the corresponding object name, data changes in Integrator are logged in **Seamles** while changes made through GUI or MOCA are reflected in **Tables** 
+ 3. Any changes made are recorded on the Issue Assignment screen.
+
+    -  Modifications to commands are logged in **Files** with the corresponding object name.
+    - Data changes in Integrator are logged in **Seamles**. 
+    - Modifications made through GUI or MOCA are reflected in **Tables** 
 
     <div style="text-align: left;">
      <img src="./assets/image3.png"
@@ -41,7 +51,16 @@ The steps below will guide you through how the issue assignment process works in
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
- 4. To finalize an issue, first click **Complete**. Then, based on what you need, choose the appropriate options. If you only want to commit your changes to the connected repository, enable the **Commit** option. If you only want to create a rollout without committing the changes, enable the **Rollout** option. If you want to do both—commit and create a rollout—make sure to enable both options. Once all required fields are filled, click **OK** to complete the process.
+## Creating a Rollout
+
+To create a Rollout:
+
+1. Click **Complete**.
+2. Choose what you want to do:
+   - **Commit** – to push changes to the repository.
+   - **Rollout** – to create a rollout package.
+   - **Both** – enable both options if you want to perform both actions together.
+3. After selecting the required options and filling in the necessary fields, click **OK** to finish.
 
     <div style="text-align: left;">
       <img src="./assets/image4.png"
@@ -52,14 +71,19 @@ The steps below will guide you through how the issue assignment process works in
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
-- Change tracking can be disabled when necessary, offering flexibility in specific scenarios.  
-- The system supports granular control over tracking policies (e.g., dscmst, configuration flags). 
-- Unauthorized changes are prevented unless they are explicitly linked to an assigned issue, enforcing discipline in the development workflow. 
+    Creating a rollout will also close the issue, the status will update from **Active (A)** to **Complete (C)**.
 
-## Reopening a Closed Issue
-To reopen a previously closed issue, update its status code. Issues marked as Completed are considered closed. To reopen them, change the status code from Completed to Active. This action reactivates the issue, making it open for further tracking. 
+## Closing an Issue
+Although creating a rollout automatically closes the issue, you can also close an issue manually if needed.
 
-<div style="text-align: left;">
+To do this:
+
+1. Go to the **General** tab of the Issue Assignment screen.
+2. Select the specific issue you want to close.
+3. From the **Status Code** dropdown, change the status from **Active (A)** to **Complete (C)**.
+4. Save your changes.
+
+    <div style="text-align: left;">
       <img src="./assets/image70.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
@@ -67,6 +91,9 @@ To reopen a previously closed issue, update its status code. Issues marked as Co
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
+
+
+This method gives you the flexibility to close an issue without creating a rollout.
 
 ---
 
