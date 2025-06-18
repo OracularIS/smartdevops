@@ -1,7 +1,7 @@
 # Reopen a Closed Issue
  Issues marked as Completed are considered closed. 
 
- To reopen a closed issue follow the following steps:
+ To reopen a closed issue follow these steps:
 
  1. Select the issue you want to reopen from the list.
 
