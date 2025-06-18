@@ -113,7 +113,8 @@ While filtering data in the Quick Grid Filter, you can use the `*` wildcard in t
 
 - To find issues where the description **starts with** a certain word, use: `word*`  
   → Example: `test*` will match "test case", "testing", etc.
-      <div style="text-align: left;">
+
+    <div style="text-align: left;">
      <img src="./assets/image86.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
@@ -125,7 +126,8 @@ While filtering data in the Quick Grid Filter, you can use the `*` wildcard in t
 
 - To find descriptions that **end with** a specific word, use: `*word`  
   → Example: `*test` will match "test issue", "test Git commit", etc.
-      <div style="text-align: left;">
+
+    <div style="text-align: left;">
      <img src="./assets/image87.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
@@ -136,7 +138,8 @@ While filtering data in the Quick Grid Filter, you can use the `*` wildcard in t
 
 - To find descriptions that **contain** a word anywhere, use: `*word*` or simply enter the word.  
   → Example: `*test*` or `test`  will match "Rollout Testing", "testing process", "pretest", etc.
-        <div style="text-align: left;">
+
+    <div style="text-align: left;">
      <img src="./assets/image88.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
