@@ -113,7 +113,7 @@ Note that in some cases the rtstr1 is an expression.  In those cases following v
 
 For example, the 
 * GIT-FEATURE-BRANCH-EXPR is typically `'feature/' || @uc_issue_id_for_branch`
-* GIT-SANDBOX-ROOT is typically `'E:\JDA\SMARTRP_WM20\gitsbx\'||@usr_id||'\'||@uc_git_repo||'\'||@uc_main_work_dir`
+* GIT-SANDBOX-ROOT is typically `'PATH_ON_OS\'||@usr_id||'\'||@uc_git_repo||'\'||@uc_main_work_dir`
 * GIT-REPO-URL-EXPR is typically `'https://'|| @git_username || ':' || @git_password || '@' || @uc_git_base_url|| '/' || @uc_git_repo|| '.git'`
 
 When we perform Git operations on the server, we use the URL evaluated from GIT-REPO-URL-EXPR.  This allows us to perform GIT operations on behalf of the logged in user.
