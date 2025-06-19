@@ -4,6 +4,8 @@
 
 ### Git Repoitory Setup
 GIT repository should be setup such that it has the same overall directory structure as our LES folder.  In order to represent the GIT information below we will need following information
+
+
 | `Concept`         | `Example`                | `Comments`                            | 
 |-------------------|--------------------------|---------------------------------------|
 | Name of the repo  | bytest                   | Each repo has a specific name         |
