@@ -21,6 +21,18 @@ Within the branch, then you should have the same structure as LES, so I should s
 ### Git Users
 All BY users that need the ability to check in must be users in GIT.  Furthermore, they should generate a token for themselves as that is needed during check in.  Both GITHUB and BitBucket support the conncept of these tokens.  During check in, users provide the git credentials.
 
+### Git Client Setup on BY Server
+Smart IS Git integration provides the capability to perform git operations from the MOCA layer.  This requires that git is installed on the BY MOCA Server.
+#### Windows
+* Install the git-bash software on the server
+* Record the path to the git.exe
+* Record the path to bash.exe which is located in the GIT installation folder
+  
+#### Linux
+* Install the necessary pacages for git
+* Record the path to the git binary
+* Record the path to bash binary
+
 ### Git Integration Concepts
 The users develop in a common environment that is shared with other users.  Typically that implies
 * Code is maintained in a common LES folder
@@ -71,10 +83,11 @@ These settings are essential to connect your application with external version c
 | GIT-FEATURE-BRANCH-EXPR  | rtstr1   | MOA Expression       | To create branch based on issue   | See below           |
 | GIT-EXE-PATH             | rtstr1   | Path                 | Path to git appliation     | C:\PROGRA~1\Git\bin\git.exe|
 | GIT-DO-PUSH              | rtstr1   | 1                    | Do we push on commit? 1 or 0 | 1                        |
-| GIT-CKIN-SCRIPT          | rtstr1   | Script  | Name of script to do check in | smart_git_commit.sh                  |
+| GIT-CKIN-SCRIPT  | rtstr1| Script| Script - if no path then in $LESDIR/scripts | smart_git_commit.sh                  |
 | GIT-CKIN-SCRIPT-SHELL| rtstr1 | Path|This is the path to shell that runs check in|`"C:\Program Files\Git\bin\bash.exe" -c`|
 | GIT-CREATE-BRANCH-SCRIPT-PARAM-QUOTE-CHAR|rtstr1,rtstr2|values|parameters within rtstr1.rtstr2 is to escape|`'` and `\'`|
-| GIT-CREATE-BRANCH-SCRIPT|rtstr1|Path to Script|Name of script tp create branch| /c/blah/scripts/smart_git_create_branch.sh |
+| GIT-CREATE-BRANCH-SCRIPT|rtstr1|Path to Script|Script - if no path then in $LESDIR/scripts|smart_git_create_branch.sh | 
+| GIT-REPO-URL-EXPR        | rtstr1   | MOCA Expression      | Resolves to a URL to access GIT | See below |
 | GIT-CREATE-BRANCH-SCRIPT-SHELL|rtstr1|Path|This is the path to shell|`"C:\Program Files\Git\bin\bash.exe" -c`|
 | GIT-CREATE-BRANCH-SCRIPT-PARAM-QUOTE-CHAR|rtstr1,rtstr2|values|parameters within rtstr1.rtstr2 is to escape|`'` and `\'`|
 
@@ -91,10 +104,18 @@ Note that in some cases the rtstr1 is an expression.  In those cases following v
 | usr_id                   | BY user or mapped user | GIT-SANDBOX-ROOT          |
 | uc_git_repo              | polval GIT-REPO | GIT-SANDBOX-ROOT                 |
 | uc_main_work_dir         | polval GIT-MAIN-WORK-BRANCH | GIT-SANDBOX-ROOT     |
+| git_username             | passed in       | GIT-REPO-URL-EXPR                |
+| git_password             | passed in       | GIT-REPO-URL-EXPR                |
+| uc_git_base_url          | polval GIT-BASE-URL | GIT-REPO-URL-EXPR            |
+| uc_git_repo              | polval GIT-REPO | GIT-REPO-URL-EXPR                |
+ 
 
-For example, the GIT-FEATURE-BRANCH-EXPR is typically `'feature/' || @uc_issue_id_for_branch`
+For example, the 
+* GIT-FEATURE-BRANCH-EXPR is typically `'feature/' || @uc_issue_id_for_branch`
+* GIT-SANDBOX-ROOT is typically `'E:\JDA\SMARTRP_WM20\gitsbx\'||@usr_id||'\'||@uc_git_repo||'\'||@uc_main_work_dir`
+* GIT-REPO-URL-EXPR is typically `'https://'|| @git_username || ':' || @git_password || '@' || @uc_git_base_url|| '/' || @uc_git_repo|| '.git'`
 
-GIT-SANDBOX-ROOT is typically `'E:\JDA\SMARTRP_WM20\gitsbx\'||@usr_id||'\'||@uc_git_repo||'\'||@uc_main_work_dir`
+When we perform Git operations on the server, we use the URL evaluated from GIT-REPO-URL-EXPR.  This allows us to perform GIT operations on behalf of the logged in user.
     
 ---
 
