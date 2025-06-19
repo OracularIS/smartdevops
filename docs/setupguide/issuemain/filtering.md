@@ -151,7 +151,7 @@ While filtering data in the Quick Grid Filter, you can use the `*` wildcard in t
 This method helps you quickly locate relevant issues without needing to enter the full description text.
 
 ## Filter Issue Data through Fat Client
-The data filtering process in the Fat Client works the same way as the [Filtering via the General Tab](#1-filtering-via-the-general-tab) in the Portal.
+The data filtering process in the Fat Client works the same way as the [Filteration via General Tab](#1-filteration---general-tab) in the Portal.
 
 ### Filter data using Wildcards
 
