@@ -93,6 +93,7 @@ These settings are essential to connect your application with external version c
 
 Following polval allow multiple rows to be added.  We concatenate all rtstr1 ordered by srtseq
 * GIT-SANDBOX-ROOT
+* GIT-REPO-URL-EXPR
 
 User id is the logged in BY user id.  If we want to remap it for some reason, we look up the user id in policy polval USERID-MAP for rtstr1 of the BY logged in user and take rtstr2.  We filter for rows that have rtnum1=1
 
