@@ -67,6 +67,16 @@ Once logged in, the dashboard provides access to all core functionality includin
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
+
+
+## Configuration 
+
+The Rollout Application supports a variety of configurable settings to adapt to different organizational needs and deployment environments. 
+
+These configurations include issue management provider integration (e.g., Jira, Azure DevOps), version control system setup (e.g., Git with Bitbucket or Azure), rollout package behavior, system preferences, and authentication methods.
+ 
+For further details, refer to the  [configuration](./config/configuration.md) section.
+
 ---
 
 <br><br>

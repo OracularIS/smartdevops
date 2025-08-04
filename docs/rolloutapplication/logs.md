@@ -67,3 +67,40 @@ To view detailed information about a specific webhook call:
 
 2. Select **Affected Files** from the submenu.
 3. You will be navigated to the **Affected Files** page.
+
+## Object Changelog
+ 
+The Object Changelog feature allows users to view changes made to specific files within the system. Follow the steps below to access and use this feature:
+ 
+1. **Navigate to Utilities**  
+   In the main navigation sidebar, click on **Utilities**.
+ 
+2. **Select Object Changelog**  
+   From the **Utilities** submenu, select the **Object Changelog** option.
+ 
+   <div style="text-align: left;">
+     <img src="./assets/object.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
+3. The user will be navigated to the **Object Changelog** page.
+ 
+4. In the **File Name** search field within the grid, enter the desired file name.
+ 
+ <div style="text-align: left;">
+     <img src="./assets/file.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
+5. The grid will display the change logs associated with the specified file.
+
+---
+<br>
