@@ -5,4 +5,5 @@ The Rollout Application connects Azure, used for issue management, with Git, the
 
 # Main Components
 - [Getting Started](/rolloutapplication/gettingstarted.md) 
+- [Configurations](/rolloutapplication/config/configuration.md)
 - [Rollout Actions](/rolloutapplication/operations.md)

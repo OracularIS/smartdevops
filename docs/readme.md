@@ -1,38 +1,29 @@
-# Smart DevOps
+ # Overview
+ 
+This documentation covers Important components designed to streamline and manage the development and deployment lifecycle within the Blue Yonder WMS ecosystem:
+ **Issue assignment** and the **Rollout Application**. Although these tools can also work as standalone where they serve distinct roles:
 
-## Overview
+##  Issue Assignment
+ 
+**Issue Assignment** is a BY portal–integrated solution for managing and tracking changes in the BY-WMS environment. It streamlines the entire change management process—from initial configuration to deployment—while ensuring traceability, repeatability, and minimal manual effort.
+ 
+### Key Highlights
+- Track and manage all changes in the BY-WMS environment.
+- Simplify the complexity of the BY data model for developers and functional users.
+- Maintain a consistent rollout process using standard BY methodology.
+- Integrate seamlessly with tools like JIRA and Git.
+- Ensure complete traceability via OSSI logs for overridden tables.
+ 
+[View Issue Assignment Documentation](./setupguide/setupguide.md)
+ 
+## Rollout Application
+ 
+The **Rollout Application** is a web-based tool that connects Azure DevOps (for issue management) with Git (for version control). It enables users to generate rollout packages based on Azure issue IDs, significantly reducing the time and effort required for deployment.
+ 
+### Key Highlights
+- Generate `.zip` or `.tar` rollout packages automatically.
+- Fetch and package affected files from Git based on Azure issues.
+- Eliminate manual tracking and reduce rollout errors.
+- Improve deployment speed, accuracy, and efficiency.
 
-In BY WMS, development and configuration have a remarkably close relationship. Managing all the changes that can impact production is a daunting task, requiring deep knowledge of the inner workings of the software and its data model. Smart IS’ **DevOps solution** tracks all changes in the BY environment.
-
----
-
-## Features
-
-- Track all changes in the BY-WMS environment.
-- Hide the complexity of the BY data model from the developer or the functional user making the change.
-- Repeatable process to reduce manual export errors from a user.
-- End-to-end management: from making the change to managing the data extraction, committing to a repository, and building a rollout.
-- Provide visibility of the changes against the change identifier.
-- When a table is overridden, Smart DevOps logs the primary key as well as the next key in separate columns within the OSSI log table, ensuring complete traceability of key changes
-
----
-
-## Value Proposition
-
-- One comprehensive toolset and methodology.
-- The client is not re-inventing the wheel, nor needing to develop a new methodology.
-- Works with industry-standard tools like JIRA, GIT, etc.
-- Rollout Builder builds the rollout in standard BY methodology for easy deployment.
-- Build a rollout for a given change identifier or multiple ones based on a Sprint schedule.
-- Supports REFS development.
-- All development activities and configurations are tracked.
-
-
----
-
-<br><br>
-
-
-
-
-
+[View Rollout Application Documentation](./rolloutapplication/overview.md)

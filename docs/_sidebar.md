@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 - [Home](./readme.md)
-- [Setup Guide](./setupguide/setupguide.md)
+- [Issue Assignment](./setupguide/setupguide.md)
    - [Policy Setup](./setupguide/policymain/policysetupguide.md)
       - [Policies for Controlled Tracking](./setupguide/policymain/policies/globaltracking.md)
       - [Policies for Exclusions](./setupguide/policymain/policies/exclusions.md)
@@ -12,12 +12,21 @@
       - [Reopen a Closed Issue](./setupguide/issuemain/reopening.md)
       - [Filter Issue Data](./setupguide/issuemain/filtering.md)
    - [Version Control Integration](./setupguide/integration.md)
-- [Concepts](./concepts.md)
-- [Use Cases](./usecases.md)
-- [Structure Of Control Files](./Controlfiles.md)
+   - [Concepts](./concepts.md)
+   - [Use Cases](./usecases.md)
+   - [Structure Of Control Files](./Controlfiles.md)
 - [Rollout Application](./rolloutapplication/overview.md)
    - [Getting Started](./rolloutapplication/gettingstarted.md)
    - [Rollout Actions](./rolloutapplication/operations.md)
+   - [Configurations](./rolloutapplication/config/configuration.md)
+      - [Issue Management Provider Configuration](./rolloutapplication/config/Issue%20config.md)
+      - [Version Control Provider Configuration](./rolloutapplication/config/version%20config.md)
+      - [Rollout Package Configuration](./rolloutapplication/config/rollout_config.md) 
+      - [System Configuration](./rolloutapplication/config/system_config.md)
+      - [AUTH Configuration](./rolloutapplication/config/auth_config.md)
+ 
+   - [Logs and Utilites](./rolloutapplication/logs.md)
+
 - [Known Issues](./knownissues.md)
 <!---   - [Logs and Utilities](./rolloutapplication/logs.md) -->
 - [FAQ's](./faqs.md)
