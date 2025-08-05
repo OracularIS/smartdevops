@@ -8,11 +8,11 @@ With support for multi-file paths, custom workspaces, and default branch targeti
 
 To **configure version control integration** follow the steps:
  
-1. Click on Settings from the sidebar.
-2. Navigate to the Version Control Provider screen.
+- Click on Settings from the sidebar.
+- Navigate to the Version Control Provider screen.
 
     <div style="text-align: left;">
-      <img src="./assets/versioncontrol.png"
+      <img src="./assets/version.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -53,11 +53,13 @@ This screen allows configuration of integration settings for your issue tracking
 9. Submit Configuration  
    - Click Submit to save
  
-How to Generate Bitbucket PAT:
+### How to Generate Bitbucket PAT:
  
-- Go to: Account Settings → App Passwords
-- Create new token with all permissions
-- Use this token as your password
+Follow the below mentioned steps to generate Bitbucket PAT:
+
+1. Go to: Account Settings → App Passwords
+2. Create new token with all permissions
+3. Use this token as your password
  
  
 ## Configuring Azure as the Version Control Provider
@@ -91,11 +93,13 @@ How to Generate Bitbucket PAT:
 9. Submit Configuration  
    - Click Submit to save
  
-How to Generate Azure DevOps PAT:
- 
-- Go to: Profile → Personal Access Tokens → New Token
-- Select scopes (Code, Project, Work Items)
-- Use the token in `VERSION_CONTROL_PASSWORD`
+### How to Generate Azure DevOps PAT:
+
+Follow the below mentioned steps to generate Azure DevOps PAT:
+
+1. Go to: Profile → Personal Access Tokens → New Token
+2. Select scopes (Code, Project, Work Items)
+3. Use the token in `VERSION_CONTROL_PASSWORD`
  
 ---
 <br>

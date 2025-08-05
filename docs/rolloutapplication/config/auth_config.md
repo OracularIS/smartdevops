@@ -7,6 +7,15 @@ This section allows you to enable or disable the different authentication mechan
 - **Login With Azure Configuration**: Enables Microsoft Azure Active Directory login.
 - **Login With Google Configuration**: Enables Google OAuth2 login.
 
+  <div style="text-align: left;">
+      <img src="./assets/auth.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
 ## AUTH Database Configuration
 
 Used when AUTH Database Configuration is enabled.

@@ -75,7 +75,7 @@ The Rollout Application supports a variety of configurable settings to adapt to 
 
 These configurations include issue management provider integration (e.g., Jira, Azure DevOps), version control system setup (e.g., Git with Bitbucket or Azure), rollout package behavior, system preferences, and authentication methods.
  
-For further details, refer to the  [configuration](./config/configuration.md) section.
+For further details, refer to the  [configuration](/rolloutapplication/config/configuration.md) section.
 
 ---
 
