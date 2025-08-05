@@ -35,22 +35,20 @@ This screen allows configuration of integration settings for your issue tracking
  
 3. Enter Base URI  
    - `ISSUE_MANAGEMENT_PROVIDER_BASE_URI`: e.g., `https://smart-is-jira.atlassian.net`
- 
+
 4. Project Category  
    - `ISSUE_MANAGEMENT_PROJECT_CATEGORY`: e.g., `fixVersion`
- 
+
 5. Username  
    - `ISSUE_MANAGEMENT_USERNAME`: Jira user account
- 
+
 6. Personal Access Token  
    - `ISSUE_MANAGEMENT_PASSWORD`: [Generate from Atlassian](https://id.atlassian.com/manage-profile/security/api-tokens)
 
- 
 7. Authentication Type  
    - `ISSUE_MANAGEMENT_AUTH_TYPE`: `oAuthBasics`
- 
-### How to Generate JIRA PAT:
 
+### How to Generate JIRA PAT:
 Follow the below mentioned steps to generate JIRA PAT:
 1. Log in to your Jira account
 2. Go to: https://id.atlassian.com/manage-profile/security/api-tokens
@@ -75,13 +73,14 @@ Follow the below mentioned steps to generate JIRA PAT:
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 4. Copy & paste into the configuration field
- 
- 
+
 ## Configuring Azure as the Issue Management Provider
- 
+
+Follow the below mentioned steos to configure Azure as Issue Management Provider:
+
 1. Select Provider  
    - `ISSUE_MANAGEMENT_PROVIDER`: `Azure`
- 
+
 2. Select Provider Version  
    - `ISSUE_MANAGEMENT_PROVIDER_VERSION`: `V5`
  
@@ -99,11 +98,11 @@ Follow the below mentioned steps to generate JIRA PAT:
  
 7. Authentication Type  
    - `ISSUE_MANAGEMENT_AUTH_TYPE`: `OAUTHBASIC`
- 
+
 ### How to Generate Azure PAT:
 
 Follow the below mentioned steps to generate Azure PAT:
- 
+
 1.  Log in to Azure DevOps
 2. Click profile → Personal Access Tokens
 3. Create new token with scopes (Code, Work Items, Projects)

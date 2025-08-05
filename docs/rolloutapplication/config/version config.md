@@ -52,16 +52,15 @@ This screen allows configuration of integration settings for your issue tracking
  
 9. Submit Configuration  
    - Click Submit to save
- 
+
 ### How to Generate Bitbucket PAT:
- 
+
 Follow the below mentioned steps to generate Bitbucket PAT:
 
 1. Go to: Account Settings → App Passwords
 2. Create new token with all permissions
 3. Use this token as your password
- 
- 
+
 ## Configuring Azure as the Version Control Provider
  
 1. Select Provider  
@@ -92,7 +91,7 @@ Follow the below mentioned steps to generate Bitbucket PAT:
  
 9. Submit Configuration  
    - Click Submit to save
- 
+
 ### How to Generate Azure DevOps PAT:
 
 Follow the below mentioned steps to generate Azure DevOps PAT:
@@ -100,6 +99,6 @@ Follow the below mentioned steps to generate Azure DevOps PAT:
 1. Go to: Profile → Personal Access Tokens → New Token
 2. Select scopes (Code, Project, Work Items)
 3. Use the token in `VERSION_CONTROL_PASSWORD`
- 
+
 ---
 <br>
