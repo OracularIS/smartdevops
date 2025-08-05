@@ -4,8 +4,8 @@ This section defines the parameters used to generate and manage rollout packages
 
 To **configure rollout package integration** follow the steps:
  
-1. Click on Settings from the sidebar.
-2. Navigate to the Rollout Package Configuration screen.
+- Click on Settings from the sidebar.
+- Navigate to the Rollout Package Configuration screen.
 
     <div style="text-align: left;">
       <img src="./assets/rollout.png"
@@ -40,7 +40,7 @@ ROLLOUT-OSSI-{PROJECT}-{VERSION}-{BUGID}
 **Example:**
 
 ```
-/var/www/html/rollout_dir/rollouts
+/var/www/html/backend/rollout_dir/rollouts
 ```
 
 **3. Define Source Path**
@@ -50,7 +50,7 @@ ROLLOUT-OSSI-{PROJECT}-{VERSION}-{BUGID}
 **Example:**
 
 ```
-/var/www/html/rollout_dir/repos
+/var/www/html/backend/rollout_dir/rollouts
 ```
 
 > Ensure both the source and destination paths are accessible by the application and have appropriate read/write permissions.

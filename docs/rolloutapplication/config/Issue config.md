@@ -9,9 +9,19 @@ Whether using Jira’s robust ticketing system or Azure DevOps’ powerful work 
 
 To **configure issue tracking integration** follow the steps:
  
-1. Click on Settings from the sidebar.
-2. Navigate to the Issue Management Provider Configuration screen.
+- Click on Settings from the sidebar.
+- Navigate to the Issue Management Provider Configuration screen.
  
+  <div style="text-align: left;">
+      <img src="./assets/issue.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
+
 This screen allows configuration of integration settings for your issue tracking system.
  
  
@@ -39,13 +49,14 @@ This screen allows configuration of integration settings for your issue tracking
 7. Authentication Type  
    - `ISSUE_MANAGEMENT_AUTH_TYPE`: `oAuthBasics`
  
-How to Generate JIRA PAT:
- 
-- Log in to your Jira account
-- Go to: https://id.atlassian.com/manage-profile/security/api-tokens
-- Click Create API Token, name it, and generate
+### How to Generate JIRA PAT:
 
-  <div style="text-align: left;">
+Follow the below mentioned steps to generate JIRA PAT:
+1. Log in to your Jira account
+2. Go to: https://id.atlassian.com/manage-profile/security/api-tokens
+3. Click Create API Token.
+
+    <div style="text-align: left;">
       <img src="./assets/token1.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
@@ -54,8 +65,8 @@ How to Generate JIRA PAT:
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
-  
-  <div style="text-align: left;">
+4. Now enter name and generate the token.
+    <div style="text-align: left;">
       <img src="./assets/token2.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
@@ -63,7 +74,7 @@ How to Generate JIRA PAT:
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
-- Copy & paste into the configuration field
+4. Copy & paste into the configuration field
  
  
 ## Configuring Azure as the Issue Management Provider
@@ -89,12 +100,14 @@ How to Generate JIRA PAT:
 7. Authentication Type  
    - `ISSUE_MANAGEMENT_AUTH_TYPE`: `OAUTHBASIC`
  
-How to Generate Azure PAT:
+### How to Generate Azure PAT:
+
+Follow the below mentioned steps to generate Azure PAT:
  
-- Log in to Azure DevOps
-- Click profile → Personal Access Tokens
-- Create new token with scopes (Code, Work Items, Projects)
-- Copy & paste into configuration
+1.  Log in to Azure DevOps
+2. Click profile → Personal Access Tokens
+3. Create new token with scopes (Code, Work Items, Projects)
+4. Copy & paste into configuration
 
     <div style="text-align: left;">
       <img src="./assets/previewfeature.png"
