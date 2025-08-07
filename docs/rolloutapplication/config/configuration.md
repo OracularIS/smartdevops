@@ -1,11 +1,11 @@
 # Rollout Application Configuration Guide
  
-This section provides detailed instructions for configuring Issue Management and Version Control systems within the Rollout Application.
+This section outlines how to configure essential integrations within the Rollout Application, including Issue Management, Version Control, Rollout Packages, and System settings.
 
-Administrators can manage the application's integration settings through the Configuration section, accessible from the sidebar menu under Settings. It is divided into:
+You can explore the complete details of each configuration by selecting the desired configuration type mentioned below.
  
-- [Issue Management Provider Configuration](/rolloutapplication/config/Issue%20config.md)
-- [Version Control Provider Configuration](/rolloutapplication/config/version%20config.md)
+- [Issue Management Provider](/rolloutapplication/config/Issue%20config.md)
+- [Version Control Provider](/rolloutapplication/config/version%20config.md)
 - [Rollout Package Configuration](/rolloutapplication/config/rollout_config.md) 
 - [System Configuration](/rolloutapplication/config/system_config.md)
 - [AUTH Configuration](/rolloutapplication/config/auth_config.md)
