@@ -1,19 +1,21 @@
-# Issue Management Provider Configuration
+# Issue Management Provider 
  
- The Issue Management Provider system in the application allows seamless integration with popular issue tracking tools such as **Jira** and **Azure DevOps**. 
- 
-By configuring provider settings such as the base URI, authentication credentials, and project identifiers, users can ensure real-time synchronization between their development workflow and the issue tracking platform. 
+The Issue Management Provider feature enables smooth integration with popular tools like Jira and Azure DevOps.
 
-Whether using Jira’s robust ticketing system or Azure DevOps’ powerful work item tracking, this feature streamlines collaboration, enhances visibility, and ensures traceability across the software development lifecycle.
- 
+By setting up basic details such as the base URI, authentication, and project identifiers you can sync your development workflow in real time with your issue tracking system.
 
-To **configure issue tracking integration** follow the steps:
+Whether you are using Jira or Azure DevOps, this integration improves collaboration, boosts visibility, and ensures clear traceability throughout the software development lifecycle.
  
-- Click on Settings from the sidebar.
-- Navigate to the Issue Management Provider Configuration screen.
+## Configuring Issue Management Providers
+
+To configure issue tracking integration:
+
+- Go to Settings in the sidebar.
+
+- Open the Issue Management Provider screen.
  
   <div style="text-align: left;">
-      <img src="./assets/issue.png"
+      <img src="./assets/c1.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -21,32 +23,18 @@ To **configure issue tracking integration** follow the steps:
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
+The following table outlines the configuration values required for integrating Jira and Azure DevOps with the Issue Management Provider system:
 
-This screen allows configuration of integration settings for your issue tracking system.
- 
- 
-## Configuring JIRA as the Issue Management Provider
- 
-1. Select Provider  
-   - `ISSUE_MANAGEMENT_PROVIDER`: `Jira`
- 
-2. Select Provider Version  
-   - `ISSUE_MANAGEMENT_PROVIDER_VERSION`: `V2` (for JIRA Cloud or latest)
- 
-3. Enter Base URI  
-   - `ISSUE_MANAGEMENT_PROVIDER_BASE_URI`: e.g., `https://smart-is-jira.atlassian.net`
+| Configuration Field              | Jira                                      | Azure DevOps                           |
+|----------------------------------|---------------------------------------------------------------|------------------------------------------------------------|
+| **Provider**                    | `Jira`                            | `Azure`                        |
+| **Provider Version**            | ` V2` (for JIRA Cloud)     | ` V5`                   |
+| **Base URI**                    | ` https://your-organization-jira.atlassian.net` | ` https://dev.azure.com/your-organization` |
+| **Project Category**            | `fixVersion`              | `fixVersion`                                              |
+| **Username**                    | `Jira user account`               | `Azure DevOps account`         |
+| **Personal Access Token (PAT)** | `Generated from Atlassian`        | `PAT from Azure DevOps`        |
+| **Authentication Type**         | ` oAuthBasics`                    | `OAUTHBASIC`                  |
 
-4. Project Category  
-   - `ISSUE_MANAGEMENT_PROJECT_CATEGORY`: e.g., `fixVersion`
-
-5. Username  
-   - `ISSUE_MANAGEMENT_USERNAME`: Jira user account
-
-6. Personal Access Token  
-   - `ISSUE_MANAGEMENT_PASSWORD`: [Generate from Atlassian](https://id.atlassian.com/manage-profile/security/api-tokens)
-
-7. Authentication Type  
-   - `ISSUE_MANAGEMENT_AUTH_TYPE`: `oAuthBasics`
 
 ### How to Generate JIRA PAT:
 Follow the below mentioned steps to generate JIRA PAT:
@@ -73,31 +61,6 @@ Follow the below mentioned steps to generate JIRA PAT:
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 4. Copy & paste into the configuration field
-
-## Configuring Azure as the Issue Management Provider
-
-Follow the below mentioned steos to configure Azure as Issue Management Provider:
-
-1. Select Provider  
-   - `ISSUE_MANAGEMENT_PROVIDER`: `Azure`
-
-2. Select Provider Version  
-   - `ISSUE_MANAGEMENT_PROVIDER_VERSION`: `V5`
- 
-3. Enter Base URI  
-   - `ISSUE_MANAGEMENT_PROVIDER_BASE_URI`: e.g., `https://dev.azure.com/your-organization`
- 
-4. Project Category  
-   - Leave `ISSUE_MANAGEMENT_PROJECT_CATEGORY` as-is
- 
-5. Username  
-   - `ISSUE_MANAGEMENT_USERNAME`: Azure DevOps account
- 
-6. Personal Access Token  
-   - `ISSUE_MANAGEMENT_PASSWORD`: PAT from Azure DevOps
- 
-7. Authentication Type  
-   - `ISSUE_MANAGEMENT_AUTH_TYPE`: `OAUTHBASIC`
 
 ### How to Generate Azure PAT:
 
