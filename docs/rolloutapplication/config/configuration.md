@@ -4,8 +4,8 @@ This section outlines how to configure essential integrations within the Rollout
 
 You can explore the complete details of each configuration by selecting the desired configuration type mentioned below.
  
-- [Issue Management Provider](/rolloutapplication/config/Issue%20config.md)
-- [Version Control Provider](/rolloutapplication/config/version%20config.md)
+- [Issue Management Provider](/rolloutapplication/config/issue/Issue%20config.md)
+- [Version Control Provider](/rolloutapplication/config/version/version%20config.md)
 - [Rollout Package Configuration](/rolloutapplication/config/rollout_config.md) 
 - [System Configuration](/rolloutapplication/config/system_config.md)
 - [AUTH Configuration](/rolloutapplication/config/auth_config.md)

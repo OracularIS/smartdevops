@@ -20,13 +20,13 @@ The Rollout Application is a web-based tool that connects
 popular issue management tools like Azure DevOps, GitHub, and Bitbucket, as well as version control systems such as Git.
 
 It enables users to generate rollout packages based on Azure issue IDs, significantly reducing the time and effort required for deployment.
- 
+
 ### Key Highlights
 - Generate `.zip` or `.tar` rollout packages automatically.
 - Fetch and package affected files from Git based on Azure issues.
 - Eliminate manual tracking and reduce rollout errors.
 - Improve deployment speed, accuracy, and efficiency.
- 
+
 [View detailed Rollout Application Documentation](/rolloutapplication/overview.md)
 
 ---
