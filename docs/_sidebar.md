@@ -1,6 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 - [Home](./readme.md)
+- [Key Components](keycomp.md)
 - [Issue Assignment](./setupguide/setupguide.md)
    - [Policy Setup](./setupguide/policymain/policysetupguide.md)
       - [Policies for Controlled Tracking](./setupguide/policymain/policies/globaltracking.md)
@@ -19,8 +20,12 @@
    - [Getting Started](./rolloutapplication/gettingstarted.md)
    - [Rollout Actions](./rolloutapplication/operations.md)
    - [Configurations](./rolloutapplication/config/configuration.md)
-      - [Issue Management Provider Configuration](./rolloutapplication/config/Issue%20config.md)
-      - [Version Control Provider Configuration](./rolloutapplication/config/version%20config.md)
+      - [Issue Management Provider](./rolloutapplication/config/issue/Issue%20config.md)
+         -  [Jira Integration Setup](./rolloutapplication/config/issue/jira.md)
+         - [Azure Integration Setup](./rolloutapplication/config/issue/azure.md)
+      - [Version Control Provider](./rolloutapplication/config/version/version%20config.md)
+         - [Configure Bitbucket Integration](./rolloutapplication/config/version/bitbucket.md)
+         - [Configure Bitbucket Integration](./rolloutapplication/config/version/azureversion.md)
       - [Rollout Package Configuration](./rolloutapplication/config/rollout_config.md) 
       - [System Configuration](./rolloutapplication/config/system_config.md)
       - [AUTH Configuration](./rolloutapplication/config/auth_config.md)
