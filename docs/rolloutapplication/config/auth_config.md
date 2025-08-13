@@ -8,7 +8,7 @@ This section allows you to enable or disable the different authentication mechan
 - **Login With Google Configuration**: Enables Google OAuth2 login.
 
   <div style="text-align: left;">
-      <img src="./assets/auth.png"
+      <img src="./assets/96.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -18,42 +18,64 @@ This section allows you to enable or disable the different authentication mechan
 
 ## AUTH Database Configuration
 
-Used when AUTH Database Configuration is enabled.
+This configuration is used when AUTH Database Configuration is enabled.
 
-- **SUPER_USER**: This is the default administrator username for the system when using database-based login.
+| Field        | Value                                                                    |
+|--------------|---------------------------------------------------------------------------------|
+| SUPER USER | default administrator username e.g, `admin` |
 
 
-### Login With Azure Configuration
+  <div style="text-align: left;">
+      <img src="./assets/97.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
-Used when Login with Azure Configuration is enabled.
 
-- **AZURE_CLIENT_ID**: The Client ID obtained from Azure Active Directory for your application.
-- **AZURE_CLIENT_SECRET**: The secret key associated with the Azure Client ID.
-- **AZURE_TENANT_ID**: The Azure Directory (tenant) ID for your organization.
-- **AZURE_REDIRECT_URI**: The URI Azure will redirect users to after a successful login.
+## Login With Azure Configuration
 
-**Example:**
+This configuration is used when Login with Azure Configuration is enabled.
 
-```
-http://localhost:8081/social/login/callback
-```
+| Field                  | Description                                                                                     |
+|------------------------|-------------------------------------------------------------------------------------------------|
+| Azure Cient ID   | The Client ID obtained from Azure Active Directory for your application.                        |
+| Azure Client Secret| The secret key associated with the Azure Client ID.                                             |
+| Azure Tenant ID    | The Azure Directory (tenant) ID for your organization.                                          |
+| Azure Redirect URI | https://yourapp.com/auth/azure/callback  |
+
+  <div style="text-align: left;">
+      <img src="./assets/99.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
 > Make sure this URI matches the one registered in your Azure AD application.
 
----
 
-### Login With Google Configuration
+## Login With Google Configuration
 
-Used when Login With Google Configuration is enabled.
+This configuration is used  when Login With Google Configuration is enabled.
 
-- **GOOGLE_CLIENT_ID**: The Client ID obtained from Google Cloud Console for your application.
-- **GOOGLE_CLIENT_SECRET**: The secret key associated with the Google Client ID.
-- **GOOGLE_REDIRECT_URL**: The URI Google will redirect users to after successful login.
+| Field                  | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| Google Client ID     | The Client ID obtained from Google Cloud Console for your application.     |
+| Google Client Secret| The secret key associated with the Google Client ID.                       |
+| Google Redirect URL  |https://yourapp.com/auth/google/callback            |
 
-**Example:**
+  <div style="text-align: left;">
+      <img src="./assets/98.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
 
-```
-http://localhost:8081/social/login/callback
-```
 ---
 <br>
