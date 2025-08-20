@@ -1,6 +1,6 @@
 # Logs and Utilites
 
-This section provides tools for viewing system activity, debugging integrations, and retrieving related metadata like webhook logs, affected files, and object change history. 
+The logs and utilities features help you monitor and understand what’s happening across the system. They provide access to activity records, debugging options for integrations, and useful metadata such as webhook logs, impacted files, and the history of object changes. 
 
 
 ## Webhook Logs

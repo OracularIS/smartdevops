@@ -20,9 +20,13 @@ This section allows you to enable or disable the different authentication mechan
 
 This configuration is used when AUTH Database Configuration is enabled.
 
+<center>
+
 | Field        | Value                                                                    |
 |--------------|---------------------------------------------------------------------------------|
 | SUPER USER | default administrator username e.g, `admin` |
+
+</center>
 
 
   <div style="text-align: left;">
@@ -38,6 +42,9 @@ This configuration is used when AUTH Database Configuration is enabled.
 ## Login With Azure Configuration
 
 This configuration is used when Login with Azure Configuration is enabled.
+
+
+<center>
 
 | Field                  | Description                                                                                     |
 |------------------------|-------------------------------------------------------------------------------------------------|
@@ -55,6 +62,8 @@ This configuration is used when Login with Azure Configuration is enabled.
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
 
+
+</center>
 > Make sure this URI matches the one registered in your Azure AD application.
 
 
@@ -62,11 +71,17 @@ This configuration is used when Login with Azure Configuration is enabled.
 
 This configuration is used  when Login With Google Configuration is enabled.
 
+
+<center>
+
 | Field                  | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
 | Google Client ID     | The Client ID obtained from Google Cloud Console for your application.     |
 | Google Client Secret| The secret key associated with the Google Client ID.                       |
 | Google Redirect URL  |https://yourapp.com/auth/google/callback            |
+
+
+</center>
 
   <div style="text-align: left;">
       <img src="./assets/98.png"
@@ -76,6 +91,8 @@ This configuration is used  when Login With Google Configuration is enabled.
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
+
+> 💡 **Tip:** Use the **suggestion button** to see recommended inputs and sample values for the field.  
 
 ---
 <br>

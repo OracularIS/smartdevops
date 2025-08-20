@@ -19,12 +19,19 @@ To configure system follow the below mentioned steps:
 
 The table below outlines the required configuration fields for system configuration.
 
+
+<center>
+
 | Field                | Value                                                                                                        |
 |----------------------|----------------------------------------------------------------------------------------------------------------------|
 | OS Platform     |  `linux`or `windows`|
 | Download Platform| `linux`or `windows` |
-| Date Format**      |  `DD/MM/YYYY` or `MM-DD-YYYY` |
-| **Release Note File| Options: `yes`or `no`    |
+| Date Format     |  `DD/MM/YYYY` or `MM-DD-YYYY` |
+| Release Note File| Options: `yes`or `no`    |
+
+</center>
+
+> 💡 **Tip:** Use the **suggestion button** to see recommended inputs and sample values for the field.  
 
 ---
 <br>
