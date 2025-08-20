@@ -1,5 +1,6 @@
 # Rollout Actions
-In this section, you will learn how to create a new rollout, delete an existing one, regenerate one, and view detailed information related to each rollout.
+Rollout actions allow you to efficiently manage the lifecycle of your rollouts.
+ You can create new rollouts to initiate changes, remove outdated or unnecessary ones, regenerate rollouts when updates are required, and access detailed information to track and review each rollout with ease.
 
 ## Project List
 

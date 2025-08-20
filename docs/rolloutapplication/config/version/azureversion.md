@@ -6,6 +6,9 @@ This page provides step-by-step guidance to configure git as your Version Contro
 
 Below are the configuration fields and their descriptions for setting up Azure as your version control provider:  
 
+
+<center>
+
 | Field                         | Value                                                                                |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------- |
 | Provider      |  git                             |
@@ -19,6 +22,7 @@ Below are the configuration fields and their descriptions for setting up Azure a
 | Default Branch              | your branch e.g, main                                         |
 | File Path     | your file path                   |
 
+</center>
 
 
 These values will be entered in the Version Control Provider settings form as shown in the example.
@@ -31,6 +35,8 @@ These values will be entered in the Version Control Provider settings form as sh
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
+
+> 💡 **Tip:** Use the **suggestion button** to see recommended inputs and sample values for the field.  
 
 ## How to Generate Azure DevOps PAT:
 

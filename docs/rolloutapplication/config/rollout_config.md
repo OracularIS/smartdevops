@@ -20,12 +20,17 @@ To configure rollout package integration follow the steps:
 
 The table below outlines the required configuration fields for rollout package configuration.
 
+<center>
+
 | Field                     | Value                                                                                          |
 |---------------------------|------------------------------------------------------------------------------------------------------|
 | Rollout Name          | `ROLLOUT-OSSI-{PROJECT}-{VERSION}-{BUGID}` Example:  ROLLOUT-OSSI-APP01-1.0.5-12345   |
 | Destination Path | /var/www/html/rollout_dir/rollouts                                        |
 | Source Path      | /var/www/html/rollout_dir/repos  |
 
+</center>
+
+> 💡 **Tip:** Use the **suggestion button** to see recommended inputs and sample values for the field.  
 
 ---
 <br>

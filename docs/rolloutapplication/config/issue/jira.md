@@ -6,6 +6,8 @@ This page provides step-by-step guidance to configure Jira as your Issue Managem
 
 The table below outlines the required configuration fields for integrating Jira with your system.
 
+<center>
+
 | Field                 | Value                          |
 | --------------------- | ---------------------------------------------- |
 | Provider              | Jira                                           |
@@ -15,6 +17,8 @@ The table below outlines the required configuration fields for integrating Jira 
 | Username              | Jira user account                              |
 | Personal Access Token | Generated from Atlassian                       |
 | Authentication Type   | oAuthBasics                                    |
+
+</center>
 
 These values will be entered in the Issue Management Provider settings form as shown in the example.
 
@@ -27,6 +31,8 @@ These values will be entered in the Issue Management Provider settings form as s
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
   
+> 💡 **Tip:** Use the **suggestion button** to see recommended inputs and sample values for the field.  
+
 
 ## How to Generate JIRA PAT:
 Follow the below mentioned steps to generate JIRA PAT:

@@ -6,7 +6,9 @@ This page provides step-by-step guidance to configure Azure  as your Issue Manag
 
 The table below outlines the required configuration fields for integrating Azure with your system.
 
-| Field                 | Value / Description                            |
+<center>
+
+| Field                 | Value                            |
 | --------------------- | ---------------------------------------------- |
 | Provider              | Jira                                           |
 | Provider Version      | V5                            |
@@ -15,6 +17,8 @@ The table below outlines the required configuration fields for integrating Azure
 | Username              | Azure user account                              |
 | Personal Access Token | Generated from Atlassian                       |
 | Authentication Type   | oAuthBasics                                    |
+
+</center>
 
 These values will be entered in the Issue Management Provider settings form as shown in the example.
 
@@ -26,6 +30,9 @@ These values will be entered in the Issue Management Provider settings form as s
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
       </div>
+
+
+> 💡 **Tip:** Use the **suggestion button** to see recommended inputs and sample values for the field.  
 
 ## How to Generate Azure PAT:
 
