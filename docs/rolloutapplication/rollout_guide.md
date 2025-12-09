@@ -11,7 +11,12 @@ Before using the application, configure the following providers:
 
 Once configured, the Dashboard will display all available projects.
 
-![Dashboard Image](./assets/Rolloutdashboardb.png)
+<img src="./assets/Rolloutdashboardb.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 ## 2. Repository Setup
 
@@ -30,7 +35,12 @@ Once configured, the Dashboard will display all available projects.
 {base_url_backend}/api/getWebhookData
 ```
 
-![Webhook Configuration Page](./assets/bitbucketWebhook.png)
+<img src="./assets/bitbucketWebhook.png"
+       alt="bitbucketWebhook"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 ## 3. Work on Your Local Machine
 
@@ -76,7 +86,12 @@ After merging the PR, your changes will appear in the **Affected Files** page:
 - URL: `{base_url_frontend}/searchaffectedfiles`
 - Or navigate via **Utilities → Affected Files**.
 
-![Affected Files Page](./assets/rollout_affected_files.png)
+<img src="./assets/rollout_affected_files.png"
+       alt="rollout_affected_files"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 ## 5. Create a Rollout
 
@@ -85,14 +100,24 @@ After merging the PR, your changes will appear in the **Affected Files** page:
 1. Navigate to the **Projects** screen.
 2. Select the desired **Project** and **Version**.
 
-![Select Project/Version Page](./assets/rollout_select_project_version.png)
+<img src="./assets/rollout_select_project_version.png"
+       alt="rollout_select_project_version"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 ### 5.2 Create Rollout
 
 1. Enter or select your **Bug ID** from the Bug List.
 2. Click **Create Rollout**.
 
-![Create Rollout Page](./assets/create_rollout.png)
+<img src="./assets/create_rollout.png"
+       alt="create_rollout"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 ### 5.3 Download Rollout
 
@@ -104,4 +129,3 @@ After merging the PR, your changes will appear in the **Affected Files** page:
 - Verify webhook configuration to avoid missing commits.
 - Keep branches small and focused for easier pull requests and rollouts.
 - Use the Affected Files page to double-check changes before creating a rollout.
-
