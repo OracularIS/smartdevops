@@ -11,7 +11,7 @@ Before using the application, configure the following providers:
 
 Once configured, the Dashboard will display all available projects.
 
-<img src="./assets/Rolloutdashboardb.png"
+<img src="./assets/Rolloutdashboard.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
