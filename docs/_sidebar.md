@@ -29,7 +29,7 @@
       - [Rollout Package Configuration](./rolloutapplication/config/rollout_config.md) 
       - [System Configuration](./rolloutapplication/config/system_config.md)
       - [AUTH Configuration](./rolloutapplication/config/auth_config.md)
- 
+   - [How to Use Rollout](./rolloutapplication/rollout_guide.md)
    - [Logs and Utilites](./rolloutapplication/logs.md)
 
 - [Known Issues](./knownissues.md)
