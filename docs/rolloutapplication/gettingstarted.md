@@ -39,8 +39,10 @@ Before getting started with Rollout Application, ensure the following requiremen
   - **Security Configuration**
 
     In the **SECURITY** section of the registry, update the `safe-file-directories` parameter to include both **GITSBXDIR** and **LESDIR**. 
-        <div style="text-align: left;">
-       <img src="./assets/reg2.png"
+
+
+  <div style="text-align: left;">
+    <img src="./assets/reg2.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
