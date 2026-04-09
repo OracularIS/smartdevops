@@ -26,6 +26,10 @@ Follow the sections below to set up policies for:
     - Set Active Git Branch
     - Set Main Git Branch
     - Set Git Executable Path
+
+- [Policies for User Interface and Interaction](/setupguide/policymain/policies/ui.md)
+    - Show Complete Issues Policy
+    - Create Rollout Auto Flag Policy
 ---
 
 <br><br>

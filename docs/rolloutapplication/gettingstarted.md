@@ -21,8 +21,34 @@ Before getting started with Rollout Application, ensure the following requiremen
 
   This setting ensures that required environment variables are publicly accessible, which is necessary for proper system functionality and integrations.
 
+- **Registry**
 
+  Before using Rollout Application, ensure the required registry paths are properly configured.
+  - **Set GITSBXDIR Environment Path**:
+  
+       The GITSBXDIR must be configured in the **Environment section** of the registry file.
 
+       In the registry file, it should appear as:
+
+       ```ini
+       [ENVIRONMENT]
+       GITSBXDIR=E:/../VAL_WM
+       ```
+    Ensure that the path is correctly set according to your environment setup.
+
+  - **Security Configuration**
+
+    In the **SECURITY** section of the registry, update the `safe-file-directories` parameter to include both **GITSBXDIR** and **LESDIR**. 
+        <div style="text-align: left;">
+       <img src="./assets/reg2.png"
+       alt="undirectedmenu"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+      </div>
+
+    This step is required to allow proper access and ensure the application can securely read the necessary environment paths.
 
 ## Logging In
 

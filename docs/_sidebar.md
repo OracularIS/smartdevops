@@ -7,6 +7,7 @@
       - [Policies for Controlled Tracking](./setupguide/policymain/policies/globaltracking.md)
       - [Policies for Exclusions](./setupguide/policymain/policies/exclusions.md)
       - [Policies for Version Control Systems](./setupguide/policymain/policies/gitpolicy.md)
+      - [Policies for User Interface and Interaction](./setupguide/policymain/policies/ui.md)
 
    - [Issue Assignment](./setupguide/issuemain/issueassignment.md)
       - [Creating and Closing an Issue](./setupguide/issuemain/creating.md)
