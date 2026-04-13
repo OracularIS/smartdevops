@@ -41,16 +41,16 @@ Before getting started with Rollout Application, ensure the following requiremen
     In the **SECURITY** section of the registry, update the `safe-file-directories` parameter to include both **GITSBXDIR** and **LESDIR**. 
 
 
-  <div style="text-align: left;">
-    <img src="./assets/reg2.png"
-       alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
+       <div style="text-align: left;">
+       <img src="./assets/reg2.jpg"
+              alt="undirectedmenu"
+              style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+                     border: 2px solid #000000; border-radius: 4px;"
+              onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+              ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+       </div>
 
-    This step is required to allow proper access and ensure the application can securely read the necessary environment paths.
+       This step is required to allow proper access and ensure the application can securely read the necessary environment paths.
 
 ## Logging In
 
