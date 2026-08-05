@@ -2,7 +2,7 @@
    To enable version control functionality in Smart DevOps, you must properly set up the related policies.
     These policies ensure that versioning features such as commit tracking, branching, and script integration work seamlessly within the Smart DevOps environment.
 
-### Git Repoitory Setup
+### Git Repository Setup
 GIT repository should be setup such that it has the same overall directory structure as our LES folder.  In order to represent the GIT information below we will need following information
 
 
@@ -19,7 +19,7 @@ Within the branch, then you should have the same structure as LES, so I should s
 - etc
 
 ### Git Users
-All BY users that need the ability to check in must be users in GIT.  Furthermore, they should generate a token for themselves as that is needed during check in.  Both GITHUB and BitBucket support the conncept of these tokens.  During check in, users provide the git credentials.
+All BY users that need the ability to check in must be users in GIT.  Furthermore, they should generate a token for themselves as that is needed during check in.  GITHUB, AZURE and BitBucket support the conncept of these tokens.  During check in, users provide the git credentials.
 
 ### Git Client Setup on BY Server
 Smart IS Git integration provides the capability to perform git operations from the MOCA layer.  This requires that git is installed on the BY MOCA Server.
@@ -65,31 +65,63 @@ The system will proceeed as follows
 
 Smart IS Git Integration ends at this point.  Users can then create a "pull request" and request "review" per their policies.
 
-### Git Integration Policy Setup
+## Git Integration Policy Setup
 
 These settings are essential to connect your application with external version control tools and services like Git.  These policies have polcod of USR-OSSI-VERSION-CONTROL, polvar of SETUP
 
-| `polval`                 | `Set`    | `Value`              | `Comments`                       | `Example`            |
-|--------------------------|----------|----------------------|----------------------------------|----------------------|
-| VERSION-CONTROL-SYSTEM   | rtstr1   | git                  | This is the only supported value | git                  |
-| GIT-REPO                 | rtstr1   | Name of the repo     | This is the name                 | bytest               |
-| GIT-BASE-URL             | rtstr1   | URL                  | Base url of git repo | bitbucket.org/smart-is           |
-| GIT-MAIN-WORK-BRANCH     | rtstr1   | name of the branch   | This is the branch which has code for env | main        |
-| GIT-ACTIVE-BRANCH        | rtstr1   | branch for check in  | We typically create branch on the fly so not needed |   |
-| GIT-CKIN-EXPLICIT-BRANCH-ALLOWED | rtnum1 | 0              | can we pass branch explicitly during check in. | 0      |
-| GIT-SANDBOX-ROOT         | rtstr1   | MOCA expression      | Resolves to path on server for the user sandbox | See below |
-| GIT-REMOVE-SUPPORTED     | rtnum1   | 1                    | Do we support remove operation 1 for yes | 1            |
-| GIT-COMMIT-MESSAGE-SEP   | rtstr1   | _Value or blank_     | Delimiter for issue id if multple  | If multiple |
-| GIT-FEATURE-BRANCH-EXPR  | rtstr1   | MOA Expression       | To create branch based on issue   | See below           |
-| GIT-EXE-PATH             | rtstr1   | Path                 | Path to git appliation     | C:\PROGRA~1\Git\bin\git.exe|
-| GIT-DO-PUSH              | rtstr1   | 1                    | Do we push on commit? 1 or 0 | 1                        |
-| GIT-CKIN-SCRIPT  | rtstr1| Script| Script - if no path then in $LESDIR/scripts | smart_git_commit.sh                  |
-| GIT-CKIN-SCRIPT-SHELL| rtstr1 | Path|This is the path to shell that runs check in|`"C:\Program Files\Git\bin\bash.exe" -c`|
-| GIT-CREATE-BRANCH-SCRIPT-PARAM-QUOTE-CHAR|rtstr1,rtstr2|values|parameters within rtstr1.rtstr2 is to escape|`'` and `\'`|
-| GIT-CREATE-BRANCH-SCRIPT|rtstr1|Path to Script|Script - if no path then in $LESDIR/scripts|smart_git_create_branch.sh | 
-| GIT-REPO-URL-EXPR        | rtstr1   | MOCA Expression      | Resolves to a URL to access GIT | See below |
-| GIT-CREATE-BRANCH-SCRIPT-SHELL|rtstr1|Path|This is the path to shell|`"C:\Program Files\Git\bin\bash.exe" -c`|
-| GIT-CREATE-BRANCH-SCRIPT-PARAM-QUOTE-CHAR|rtstr1,rtstr2|values|parameters within rtstr1.rtstr2 is to escape|`'` and `\'`|
+### Bitbucket Policy Setup
+
+| polval | srtseq | rtstr1 | rtnum1 | rtnum2 | Comments | Example |
+|---------|--------|----------------|---------|---------|----------|---------|
+| VERSION-CONTROL-SYSTEM | 1 | git | 0 | 0 | This is the only supported value | git |
+| GIT-REPO | 1 | Repository name | 1 | 0 | Name of the repository | bytest |
+| GIT-BASE-URL | 1 | Git server base URL | 0 | 0 | Base URL of Git repository | bitbucket.org/smart-is |
+| GIT-MAIN-WORK-BRANCH | 1 | Main branch name | 0 | 0 | Main branch containing shared code | main |
+| GIT-ACTIVE-BRANCH | 1 | Active branch name | 0 | 0 | Branch currently used for check-in operations | main |
+| GIT-PROVIDER | 1 | Git provider name | 1 | 0 | Git provider name | bitbucket |
+| GIT-PROVIDER-API-BASE | 1 | Provider API base URL | 1 | 0 | Base URL for provider API calls | https://api.bitbucket.org |
+| GIT-EXE-PATH | 1 | Full path to git.exe | 1 | 0 | Full path to git executable | C:\Program Files\Git\bin\git.exe |
+| GIT-SANDBOX-ROOT | 1 | MOCA Expression | 1 | 0 | Resolves to the sandbox root path for the user | C:\IDA\BY-24\BY-24\gitbsx\|\|\@usr_id\|\|\@\uc_git_repo\|\|\@\uc_main_work_dir |
+| GIT-REPO-URL-EXPR | 100 | https:// | 1 | 0 | Repository URL expression (Part 1) | https:// |
+| GIT-REPO-URL-EXPR | 200 | \|\| 'x-bitbucket-api-token-auth' \|\| ':' \|\| @git_password \|\| '@' \|\| @uc_git_base_url | 1 | 0 | Repository URL expression (Part 2) | \|\| 'x-bitbucket-api-token-auth' \|\| ':' \|\| @git_password \|\| '@' \|\| @uc_git_base_url |
+| GIT-REPO-URL-EXPR | 300 | '/' \|\| @uc_git_repo | 1 | 0 | Repository URL expression (Part 3) | '/' \|\| @uc_git_repo |
+| GIT-REPO-URL-EXPR | 400 | '.git' | 1 | 0 | Repository URL expression (Part 4) | '.git' |
+
+
+## Git Hub Policy Setup
+
+| polval | srtseq | rtstr1 (Value) | rtnum1 | rtnum2 | Comments | Example |
+|---------|--------|----------------|---------|---------|----------|---------|
+| GIT-REPO | 1 | Repository name | 1 | 1 | Name of the repository | SmartRP |
+| GIT-BASE-URL | 1 | Git server base URL | 0 | 1 | Base URL of Git repository | github.com/OracularIS |
+| GIT-MAIN-WORK-BRANCH | 1 | Main branch name | 0 | 1 | Main branch containing shared code | main |
+| GIT-ACTIVE-BRANCH | 1 | Active branch name | 0 | 1 | Branch currently used for check-in operations | main |
+| GIT-PROVIDER | 1 | Git provider name | 1 | 1 | Git provider name | github |
+| GIT-PROVIDER-API-BASE | 1 | Provider API base URL | 1 | 0 | Base URL for provider API calls | https://github.com  |
+| GIT-EXE-PATH | 1 | Full path to git.exe | 1 | 1 | Full path to git executable | C:\PROGRA~1\Git\bin\git.exe |
+| GIT-SANDBOX-ROOT | 1 | MOCA Expression | 1 | 1 | Resolves to the sandbox root path for the user | E:\JDA\SmartRP_24\Smart_Wm\gitsbx\|\|\@usr_id\|\|'\'\|\|\@uc_git_repo |
+| GIT-REPO-URL-EXPR | 100 | 'https://' | 1 | 1 | Repository URL expression (Part 1) | 'https://' |
+| GIT-REPO-URL-EXPR | 200 | \|\| @git_username \|\| ':' \|\| @git_password \|\| '@' \|\| @uc_git_base_url | 1 | 1 | Repository URL expression (Part 2) | \|\| @git_username \|\| ':' \|\| @git_password \|\| '@' \|\| @uc_git_base_url |
+| GIT-REPO-URL-EXPR | 300 | '/' \|\| @uc_git_repo | 1 | 1 | Repository URL expression (Part 3) | '/' \|\| @uc_git_repo |
+| GIT-REPO-URL-EXPR | 400 | '.git' | 1 | 1 | Repository URL expression (Part 4) | '.git' |
+
+## Azure DevOps Policy Setup
+
+| polval | srtseq | rtstr1 (Value) | rtnum1 | rtnum2 | Comments | Example |
+|---------|--------|----------------|---------|---------|----------|---------|
+| GIT-REPO | 1 | Repository name | 1 | 0 | Name of the repository | SmartRP |
+| GIT-BASE-URL | 1 | Git server base URL | 0 | 0 | Base URL of Git repository | dev.azure.com/oracularis/BlueYonder/_git |
+| GIT-MAIN-WORK-BRANCH | 1 | Main branch name | 0 | 0 | Main branch containing shared code | main |
+| GIT-ACTIVE-BRANCH | 1 | Active branch name | 0 | 0 | Branch currently used for check-in operations | main |
+| GIT-PROVIDER | 1 | Git provider name | 1 | 0 | Git provider name | azure |
+| GIT-PROVIDER-API-BASE | 1 | Provider API base URL | 1 | 0 | Base URL for provider API calls | https://dev.azure.com |
+| GIT-EXE-PATH | 1 | Full path to git.exe | 1 | 0 | Full path to git executable | C:\Program Files\Git\bin\git.exe |
+| GIT-SANDBOX-ROOT | 1 | MOCA Expression | 1 | 0 | Resolves to the sandbox root path for the user | C:\JDA\BY-24\gitsbx\|\|\@usr_id\|\|'\'\|\|\@uc_git_repo\|\|'\'\|\|\@uc_main_work_dir |
+| GIT-REPO-URL-EXPR | 100 | 'https://' | 1 | 0 | Repository URL expression (Part 1) | 'https://' |
+| GIT-REPO-URL-EXPR | 200 | \|\| @git_username \|\| ':' \|\| @git_password \|\| '@' \|\| @uc_git_base_url | 1 | 0 | Repository URL expression (Part 2) | \|\| @git_username \|\| ':' \|\| @git_password \|\| '@' \|\| @uc_git_base_url |
+| GIT-REPO-URL-EXPR | 300 | '/' \|\| @uc_git_repo | 1 | 0 | Repository URL expression (Part 3) | '/' \|\| @uc_git_repo |
+| GIT-REPO-URL-EXPR | 400 | '.git' | 1 | 0 | Repository URL expression (Part 4) | '.git' |
+
 
 Following polval allow multiple rows to be added.  We concatenate all rtstr1 ordered by srtseq
 * GIT-SANDBOX-ROOT
