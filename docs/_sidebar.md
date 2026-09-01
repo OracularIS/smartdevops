@@ -23,13 +23,21 @@
    - [Configurations](./rolloutapplication/config/configuration.md)
       - [Issue Management Provider](./rolloutapplication/config/issue/Issue%20config.md)
          -  [Jira Integration Setup](./rolloutapplication/config/issue/jira.md)
+         - [Bugzilla Integration Setup](./rolloutapplication/config/issue/bugzilla.md)
          - [Azure Integration Setup](./rolloutapplication/config/issue/azure.md)
       - [Version Control Provider](./rolloutapplication/config/version/version%20config.md)
          - [Configure Bitbucket Integration](./rolloutapplication/config/version/bitbucket.md)
-         - [Configure Bitbucket Integration](./rolloutapplication/config/version/azureversion.md)
+         - [Configure GitHub Integration](./rolloutapplication/config/version/github.md)
+         - [Configure Azure DevOps Integration](./rolloutapplication/config/version/azureversion.md)
       - [Rollout Package Configuration](./rolloutapplication/config/rollout_config.md) 
       - [System Configuration](./rolloutapplication/config/system_config.md)
-      - [AUTH Configuration](./rolloutapplication/config/auth_config.md)
+      - [AUTH Configuration](./rolloutapplication/config/auth/Auth%20config.md)
+         - [Configure Database Authentication](./rolloutapplication/config/auth/database.md)
+         - [Configure Microsoft Azure Authentication](./rolloutapplication/config/auth/azure.md)
+         - [Configure Google Authentication](./rolloutapplication/config/auth/google.md)
+         - [Configure Okta Authentication](./rolloutapplication/config/auth/okta.md)
+         - [Configure OpenID Connect Authentication](./rolloutapplication/config/auth/openid.md)
+         - [Configure LDAP Authentication](./rolloutapplication/config/auth/ldap.md)
    - [How to Use Rollout](./rolloutapplication/rollout_guide.md)
    - [Logs and Utilites](./rolloutapplication/logs.md)
 
@@ -38,4 +46,3 @@
 - [FAQ's](./faqs.md)
 <!--- [Controlled Object Layout](controlledobjectlayout.md)-->
 <!--- [Getting Started](./GettingStarted.md)-->
-

@@ -1,98 +1,89 @@
 # AUTH Configuration
 
-This section allows you to enable or disable the different authentication mechanisms:
+This page explains how to configure the current **Authentication** screen in **Settings**.
 
-- **AUTH Database Configuration**: Enables authentication using credentials stored in a local database.
-- **AUTH LDAP Configuration**: Enables authentication using LDAP (Lightweight Directory Access Protocol).
-- **Login With Azure Configuration**: Enables Microsoft Azure Active Directory login.
-- **Login With Google Configuration**: Enables Google OAuth2 login.
+The latest screen lets you:
 
-  <div style="text-align: left;">
-      <img src="./assets/96.png"
-       alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
+- enable or disable any authentication provider
+- configure each provider independently
+- use the **Configure** button to open provider-specific settings
 
-## AUTH Database Configuration
+Open Authentication Configuration:
 
-This configuration is used when AUTH Database Configuration is enabled.
+1. Open **Settings** from the left navigation.
+2. Find the **Authentication** card.
+3. Click **Edit** to open the authentication configuration screen.
 
-<center>
+![Settings screen showing the Authentication card in the configuration overview](./assets/authentication-settings-card.png)
 
-| Field        | Value                                                                    |
-|--------------|---------------------------------------------------------------------------------|
-| SUPER USER | default administrator username e.g, `admin` |
+The current Authentication page uses provider cards instead of a single shared form.
 
-</center>
+Each provider is configured independently, so you can:
 
+- enable only the methods you want to use
+- leave unused methods disabled
+- click **Configure** on a specific provider to manage its settings
 
-  <div style="text-align: left;">
-      <img src="./assets/97.png"
-       alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
+![Authentication configuration screen showing provider cards with enable toggles and Configure buttons](./assets/authentication-configuration-overview.png)
 
+The current screen shows these authentication providers:
 
-## Login With Azure Configuration
+- `Database`
+- `Microsoft Azure`
+- `Google`
+- `Okta`
+- `OpenID Connect`
+- `LDAP`
 
-This configuration is used when Login with Azure Configuration is enabled.
+Detailed setup guides:
 
+- [Configure Database Authentication](/rolloutapplication/config/auth/database.md)
+- [Configure Microsoft Azure Authentication](/rolloutapplication/config/auth/azure.md)
+- [Configure Google Authentication](/rolloutapplication/config/auth/google.md)
+- [Configure Okta Authentication](/rolloutapplication/config/auth/okta.md)
+- [Configure OpenID Connect Authentication](/rolloutapplication/config/auth/openid.md)
+- [Configure LDAP Authentication](/rolloutapplication/config/auth/ldap.md)
 
-<center>
+Each provider card includes:
 
-| Field                  | Description                                                                                     |
-|------------------------|-------------------------------------------------------------------------------------------------|
-| Azure Cient ID   | The Client ID obtained from Azure Active Directory for your application.                        |
-| Azure Client Secret| The secret key associated with the Azure Client ID.                                             |
-| Azure Tenant ID    | The Azure Directory (tenant) ID for your organization.                                          |
-| Azure Redirect URI | https://yourapp.com/auth/azure/callback  |
+- the provider name
+- a short description
+- a status label such as `Enabled` or `Not configured`
+- an `Enable` toggle
+- a **Configure** button
 
-  <div style="text-align: left;">
-      <img src="./assets/99.png"
-       alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
+Use the **Enable** toggle on each card to turn that authentication method on or off.
 
+This means you can:
 
-</center>
-> Make sure this URI matches the one registered in your Azure AD application.
+- enable multiple authentication methods at the same time
+- disable methods that are not needed
+- manage each provider without affecting the others
 
+The page is designed so authentication providers are configured independently.
 
-## Login With Google Configuration
+To configure any authentication provider:
 
-This configuration is used  when Login With Google Configuration is enabled.
+1. locate the provider card
+2. enable it if needed
+3. click **Configure**
 
+The **Configure** button opens that provider's own settings so you can manage the required connection or login fields for that authentication method.
 
-<center>
+The current Authentication screen supports a card-based flow:
 
-| Field                  | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| Google Client ID     | The Client ID obtained from Google Cloud Console for your application.     |
-| Google Client Secret| The secret key associated with the Google Client ID.                       |
-| Google Redirect URL  |https://yourapp.com/auth/google/callback            |
+- `Database` is used for internal application credentials
+- `Microsoft Azure` is used for Azure-based sign-in
+- `Google` is used for Google account sign-in
+- `Okta` is used for enterprise identity provider integration
+- `OpenID Connect` is used for custom or third-party OIDC identity services
+- `LDAP` is used for directory-based authentication
 
+You can enable and configure these providers one by one based on your environment.
 
-</center>
-
-  <div style="text-align: left;">
-      <img src="./assets/98.png"
-       alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
-
-> 💡 **Tip:** Use the **suggestion button** to see recommended inputs and sample values for the field.  
+- enabled providers show their status directly on the card
+- providers that are not ready yet can remain disabled
+- configuration is not done from the toggle alone; use **Configure** to manage provider settings
 
 ---
 <br>
