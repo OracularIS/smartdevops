@@ -1,33 +1,48 @@
 # Version Control Provider
- 
- The Version Control System (VCS) integration enables the application to connect with platforms like **Bitbucket** and **Azure Repos**, allowing teams to manage and track source code changes efficiently. 
- 
- By configuring essential parameters such as repository URIs, authentication tokens, API versions, and default branches, users can automate version tracking and streamline deployment workflows.
- 
-With support for multi-file paths, custom workspaces, and default branch targeting, the VCS integration is designed to support modern DevOps practices and continuous deployment pipelines.
 
-## Configuring Issue Management Providers
-To configure version control integration follow the steps:
- 
-- Click on Settings from the sidebar.
-- Navigate to the Version Control Provider screen.
+The Version Control Provider wizard connects Rollout to your source control system so rollout files can be created, versioned, and managed from the repository settings your team uses.
 
-    <div style="text-align: left;">
-      <img src="./assets/92.png"
-       alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
+The current wizard is a **5-step flow**:
 
-- Select your provider like git or svn.
+1. `VCS Type`
+2. `Provider`
+3. `API Version`
+4. `Configuration`
+5. `Review & Save`
 
-- Follow the provider-specific setup guide:
-  - [Configure Bitbucket Integration](/rolloutapplication/config/version/bitbucket.md)
-  - [Configure Azure Integration](/rolloutapplication/config/version/azureversion.md)
+## Open Version Control
 
+1. Go to **Settings** from the left navigation.
+2. Find the **Version Control** card.
+3. Click **Edit** to open the guided setup flow.
 
+![Version Control card on the Settings screen](./assets/version-control-settings-card.png)
+
+## Configure Version Control Providers
+
+1. In **Step 1 - VCS Type**, choose the version control system your team uses.
+2. The current UI shows `Git` and `SVN (Subversion)` as the available VCS types.
+3. Select the required option and click **Continue**.
+
+![Step 1 of the Version Control wizard showing Git and SVN (Subversion)](./assets/version-control-step-1-vcs-type.png)
+
+4. If you choose **Git**, continue to **Step 2 - Provider** and select the hosting provider for the repository integration.
+5. The current Provider step shows `GitHub`, `Bitbucket`, and `Azure DevOps`.
+
+![Step 2 of the Version Control wizard showing the Git provider choices](./assets/version-control-step-2-provider-selection.png)
+
+6. After the provider is selected, continue with the provider-specific **API Version**, **Configuration**, and **Review & Save** steps.
+
+Provider-specific setup guides:
+- [Configure Bitbucket Integration](/rolloutapplication/config/version/bitbucket.md)
+- [Configure GitHub Integration](/rolloutapplication/config/version/github.md)
+- [Configure Azure DevOps Integration](/rolloutapplication/config/version/azureversion.md)
+
+## Notes
+
+- The screenshots provided for the current flow show the complete **Git** setup path.
+- `SVN (Subversion)` appears in the VCS Type step, but the later provider-specific screenshots supplied for this update are for Git-based providers only.
+- In the current review screens, the summary table may show both the selected provider details and the selected VCS type.
 
 ---
 <br>

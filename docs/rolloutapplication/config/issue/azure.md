@@ -1,57 +1,77 @@
 # Azure Integration Setup
 
-This page provides step-by-step guidance to configure Azure  as your Issue Management Provider and connect it seamlessly with your development workflow.  
+This page explains how to configure **Azure DevOps** as the Issue Management Provider in Rollout.
 
-## Configuration Fields for Jira
+## Configuration Fields for Azure DevOps
 
-The table below outlines the required configuration fields for integrating Azure with your system.
+The current Azure DevOps setup uses the following fields in the wizard:
 
-<center>
+| Field | Value |
+| --- | --- |
+| Provider | `Azure DevOps` |
+| API Version | `v5` |
+| Base URI | `https://dev.azure.com/your-organization` |
+| Authentication Type | `oAuthBasic` |
+| Username | Azure DevOps user account |
+| Password / Token | Azure DevOps personal access token |
+| Sync Interval | Set in minutes |
+| Project Category | Version category key used by your Azure DevOps integration, if required |
 
-| Field                 | Value                            |
-| --------------------- | ---------------------------------------------- |
-| Provider              | Jira                                           |
-| Provider Version      | V5                            |
-| Base URI              | ` https://dev.azure.com/your-organization` |
-| Project Category      | `fixVersion`                                   |
-| Username              | Azure user account                              |
-| Personal Access Token | Generated from Atlassian                       |
-| Authentication Type   | oAuthBasics                                    |
+The current Azure DevOps wizard uses these fields across the connection details, authentication, and review steps.
 
-</center>
+## Step 1 - Choose a Provider
 
-These values will be entered in the Issue Management Provider settings form as shown in the example.
+1. Open **Settings**.
+2. Select **Issue Management**.
+3. Click **Edit Configuration**.
+4. In **Step 1 - Choose a provider**, select **Azure DevOps** and click **Continue**.
 
-   <div style="text-align: left;">
-      <img src="./assets/91.png"
-       alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
+![Azure DevOps selected in the Issue Management provider wizard](./assets/issue-management-provider-select-azure-devops.png)
 
+## Step 2 - Connection Details
 
-> 💡 **Tip:** Use the **suggestion button** to see recommended inputs and sample values for the field.  
+In **Step 2 - Connection details**:
 
-## How to Generate Azure PAT:
+- Review the **Azure DevOps API** connection type.
+- Confirm the compatible API version badge, `v5`.
+- Enter the Azure DevOps **Base URI**.
+- Use **Use default URL** if you need to restore the default value.
+- Click **Continue** to proceed to the next step.
 
-Follow the below mentioned steps to generate Azure PAT:
+![Azure DevOps connection details showing the API version badge and base URI field](./assets/issue-management-provider-azure-connection-details.png)
 
-1. Log in to Azure DevOps
-2. Click profile 
-4. Navigate to Personal Access Tokens
-3. Create new token with scopes (Code, Work Items, Projects)
-4. Copy & paste into configuration
+## Step 3 - Configure Connection
 
-    <div style="text-align: left;">
-      <img src="./assets/previewfeature.png"
-       alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
+In **Step 3 - Configure connection**:
+
+- Confirm the authentication type shown in the current UI.
+- Enter the Azure DevOps `Username`.
+- Enter the Azure DevOps `Password` or personal access token.
+- Set the `Sync Interval` in minutes.
+- Select the `Project Category` when your setup requires one.
+- Click **Continue** after filling in the required values.
+
+![Azure DevOps configure connection step with credentials and sync settings](./assets/issue-management-provider-azure-configure-connection.png)
+
+## Step 4 - Review & Save
+
+In **Step 4 - Review & save**:
+
+- Review `Provider`, `Base URI`, `API Version`, `Auth Type`, `Username`, `Sync Interval`, and `Project Category`.
+- Click **Test Connection** if you want to validate the Azure DevOps connection before saving.
+- Click **Save Configuration** to complete the setup.
+
+![Azure DevOps review and save step showing the final configuration summary](./assets/issue-management-provider-azure-review-save.png)
+
+## How to Generate an Azure DevOps PAT
+
+1. Sign in to Azure DevOps.
+2. Open your profile menu.
+3. Navigate to **Personal Access Tokens**.
+4. Create a new token with the scopes required by your environment.
+5. Copy the token and use it in the Azure DevOps password or token field in Rollout.
+
+![Azure DevOps personal access token screen](../../../assets/previewfeature.png)
 
 ---
 <br>

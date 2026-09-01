@@ -11,7 +11,7 @@ Before using the application, configure the following providers:
 
 Once configured, the Dashboard will display all available projects.
 
-<img src="./assets/Rolloutdashboard.png"
+<img src="../assets/Rolloutdashboard.png"
        alt="undirectedmenu"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -27,7 +27,7 @@ Once configured, the Dashboard will display all available projects.
 
 ### 2.2 Configure Webhook
 
-1. Go to **Repository Settings → Webhooks**.
+1. Go to **Repository Settings -> Webhooks**.
 2. Enable the **Push Event**.
 3. Set the Webhook URL to:
 
@@ -35,7 +35,7 @@ Once configured, the Dashboard will display all available projects.
 {base_url_backend}/api/getWebhookData
 ```
 
-<img src="./assets/bitbucketWebhook.png"
+<img src="../assets/bitbucketWebhook.png"
        alt="bitbucketWebhook"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -81,12 +81,16 @@ BY-123 Update user commands
 
 ## 4. Verify Changes
 
-After merging the PR, your changes will appear in the **Affected Files** page:
+After merging the PR, open the **Affected Files** page to confirm that Rollout captured your repository changes:
 
-- URL: `{base_url_frontend}/searchaffectedfiles`
-- Or navigate via **Utilities → Affected Files**.
+1. Open `http://localhost:8080/affectedfiles`.
+2. In deployed environments, use `{base_url_frontend}/affectedfiles`.
+3. Or navigate from the left menu using **Utilities -> Affected Files**.
+4. Use the search bar to filter by values such as `bug:13887`, `file:debug.js`, `path:customer/db`, or `repo:SmartRP`.
+5. Confirm your bug appears in the results, then review the repository, author, timestamp, and **files changed** count.
+6. Click the row action on the right to inspect the affected files before creating the rollout.
 
-<img src="./assets/rollout_affected_files.png"
+<img src="../assets/rollout_affected_files.png"
        alt="rollout_affected_files"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
@@ -95,33 +99,71 @@ After merging the PR, your changes will appear in the **Affected Files** page:
 
 ## 5. Create a Rollout
 
-### 5.1 Select Project & Version
+The latest Rollout screen uses a guided 3-step wizard: **Select project**, **Choose version**, and **Rollout Details**.
 
-1. Navigate to the **Projects** screen.
-2. Select the desired **Project** and **Version**.
+### 5.1 Select a Project
 
-<img src="./assets/rollout_select_project_version.png"
-       alt="rollout_select_project_version"
+1. Open the **Projects** page.
+2. Click **Create Rollout** from the page toolbar or start from the rollout action on a project row.
+3. In **Step 1 - Select project**, use **Search by project name...** if needed.
+4. Click the project you want to use for this rollout.
+5. Use **Sync projects** if the project list needs to be refreshed first.
+
+<img src="../assets/rollout-step-2-select-project.png"
+       alt="rollout-step-2-select-project"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
-### 5.2 Create Rollout
+### 5.2 Choose a Version
 
-1. Enter or select your **Bug ID** from the Bug List.
-2. Click **Create Rollout**.
+1. In **Step 2 - Choose version**, review the selected project shown at the top.
+2. Click the release version you want to use.
+3. If needed, use **Change** to go back and pick a different project before continuing.
 
-<img src="./assets/create_rollout.png"
-       alt="create_rollout"
+<img src="../assets/rollout-step-3-choose-version.png"
+       alt="rollout-step-3-choose-version"
        style="height: 200px; margin: auto; display: block; cursor: zoom-in;
               border: 2px solid #000000; border-radius: 4px;"
        onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
        ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
-### 5.3 Download Rollout
+### 5.3 Complete Rollout Details
 
-- If successful, a popup will appear allowing you to **download the rollout**.
+1. In **Step 3 - Rollout Details**, review the selected **Project** and **Version**.
+2. Fill in or review the available fields:
+
+- **Rollout Name**
+- **Version**
+- **Environment** *(Optional)*
+- **Bug IDs**
+- **Platform**
+- **Tags**
+- **Description**
+
+3. Use **Change** beside **Project** or **Version** if you need to go back.
+4. Click **Create Rollout** to generate the rollout.
+
+<img src="../assets/rollout-step-5-create-rollout-action.png"
+       alt="rollout-step-5-create-rollout-action"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
+
+### 5.4 Download the Rollout
+
+1. After the rollout is created, open the **Rollout List** for the selected project and version.
+2. Use the **TAR** button in the **Download** column to download the package.
+3. If needed, use the button dropdown to download the ZIP version instead.
+
+<img src="../assets/rollout-download-button.png"
+       alt="rollout-download-button"
+       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
+              border: 2px solid #000000; border-radius: 4px;"
+       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
+       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
 
 ## Tips & Best Practices
 

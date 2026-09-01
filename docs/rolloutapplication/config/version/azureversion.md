@@ -1,61 +1,73 @@
-# Configure Bitbucket Integration
+# Configure Azure DevOps Integration
 
-This page provides step-by-step guidance to configure git as your Version Control Provider.  
+This page explains how to configure **Azure DevOps** in the current Version Control Provider wizard.
 
-## Configuration Fields for Azure
+## Configuration Fields for Azure DevOps
 
-Below are the configuration fields and their descriptions for setting up Azure as your version control provider:  
+The current Azure DevOps setup uses the following values across the wizard:
 
+| Field | Value |
+| --- | --- |
+| VCS Type | `Git` |
+| Provider | `Azure DevOps` |
+| API Version | `v5_1` |
+| Base URI | `https://dev.azure.com/{organization}/{project}/_apis/git` |
+| Username | Azure DevOps user account |
+| Password / Token | Azure DevOps personal access token |
+| Workspace / Org | Repository owner, organization, or workspace value used by your setup |
+| Default Branch | Repository default branch, such as `main` |
+| Multi-File Path | Repository file path or folder name, such as `RPWEB` |
 
-<center>
+## Step 1 - VCS Type
 
-| Field                         | Value                                                                                |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Provider      |  git                             |
-| Provider Type | Azure                                     |
-| Version Control URI           | https://dev.azure.com/your-organization         |
-| API Version   | v5_1  |
-| Username      | Azure account user name                                                         |
-| Password     | Personal Access Token (PAT)|
-| Workspace         | Workspace system.                                            |
-| File Version                 | Latest                                      |
-| Default Branch              | your branch e.g, main                                         |
-| File Path     | your file path                   |
+1. Open **Settings**.
+2. Select **Version Control**.
+3. Click **Edit**.
+4. In **Step 1 - VCS Type**, choose **Git** and click **Continue**.
 
-</center>
+## Step 2 - Provider
 
+1. In **Step 2 - Provider**, select **Azure DevOps** from the available Git hosting providers.
+2. Click **Continue** to move to the API version step.
 
-These values will be entered in the Version Control Provider settings form as shown in the example.
+The current Provider step for Git-based integrations shows the available hosting options before you continue with the Azure DevOps-specific API version and repository settings.
+![Step 2 of the Version Control wizard showing Azure DevOps selected](./assets/version-control-step-2-provider-azure-devops-selected.png)
 
-   <div style="text-align: left;">
-      <img src="./assets/94.png"
-       alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
+## Step 3 - API Version
 
-> 💡 **Tip:** Use the **suggestion button** to see recommended inputs and sample values for the field.  
+In **Step 3 - API Version**:
 
-## How to Generate Azure DevOps PAT:
+- Review the Azure DevOps API version options.
+- The current UI shows `v5_1`.
+- The screen marks it as the recommended option.
+- Click **Continue** after confirming the version.
 
-Follow the below mentioned steps to generate Azure DevOps PAT:
+![Azure DevOps API Version step showing the recommended v5_1 option](./assets/version-control-step-3-azure-devops-api-version.png)
 
-1. Navigate of your Azuew Profile.
-2. Go to Personal Access Tokens and select New Token
+## Step 4 - Configuration
 
-   <div style="text-align: left;">
-      <img src="./assets/101.png"
-       alt="undirectedmenu"
-       style="height: 200px; margin: auto; display: block; cursor: zoom-in;
-              border: 2px solid #000000; border-radius: 4px;"
-       onclick="this.style.height='400px'; this.style.cursor='zoom-out';"
-       ondblclick="this.style.height='200px'; this.style.cursor='zoom-in';">
-      </div>
+In **Step 4 - Configuration**, enter the repository connection values shown in the current UI:
 
-2. Select scopes (Code, Project, Work Items)
-3. Use the token in `VERSION_CONTROL_PASSWORD`
+- `Base URI`
+- `Username`
+- `Password / Token`
+- `Workspace / Org`
+- `Default Branch`
+- `Multi-File Path`
+
+Click **Continue** after completing the form.
+
+![Azure DevOps configuration step showing the repository connection fields](./assets/version-control-step-4-azure-devops-configuration.png)
+
+## Step 5 - Review & Save
+
+In **Step 5 - Review & Save**:
+
+- Review the selected provider, API version, base URI, username state, workspace or org value, default branch, and multi-file path.
+- Use **Test Connection** if you want to validate the Azure DevOps connection before saving.
+- Click **Save Configuration** to complete the setup.
+
+![Azure DevOps review and save step showing the final configuration summary](./assets/version-control-step-5-azure-devops-review-save.png)
 
 ---
 <br>
