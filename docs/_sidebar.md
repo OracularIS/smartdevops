@@ -8,6 +8,7 @@
       - [Policies for Exclusions](./setupguide/policymain/policies/exclusions.md)
       - [Policies for Version Control Systems](./setupguide/policymain/policies/gitpolicy.md)
       - [Policies for User Interface and Interaction](./setupguide/policymain/policies/ui.md)
+      - [Policies for Prevent Key Change](./setupguide/policymain/policies/policies-for-preventing-key-change.md)
 
    - [Issue Assignment](./setupguide/issuemain/issueassignment.md)
       - [Creating and Closing an Issue](./setupguide/issuemain/creating.md)

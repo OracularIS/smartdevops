@@ -27,17 +27,16 @@ The functionality is controlled entirely through policies in `USR-OSSI-VERSION-C
 
 The policy uses the following values:
 
-| `polcod` | `polvar` | `polval` | `rtnum1` | 
-|---|---|---|---|---|
-| `USR-OSSI-VERSION-CONTROL` | `PREVENT-KEY-COLVAL-CHANGE` | `DEFAULT` | `1` or `0` | 
+| `polcod` | `polvar` | `polval` | `rtnum1` |
+|---|---|---|---|
+| `USR-OSSI-VERSION-CONTROL` | `PREVENT-KEY-COLVAL-CHANGE` | `DEFAULT` | `1` or `0` |
 
 - `polcod` identifies the policy group.
 - `polvar` identifies the key-change prevention functionality.
 - `polval` is either `DEFAULT` or the name of a specific table.
 - `rtnum1` controls whether the functionality is enabled: `1` enables it and `0` disables it.
-- `wh_id` must be set to `----`.
 
-The system first looks for a policy matching the target table name. If no table-specific policy is found, it uses the `DEFAULT` policy. If neither value is configured, the functionality defaults to enabled (`1`).
+The system first looks for a policy matching the target table name. If no table-specific policy is found, it uses the `DEFAULT` policy. If neither value is configured, the functionality defaults to disabled (`0`).
 
 **Important:** A table-specific policy takes precedence over `DEFAULT`. This allows the functionality to be enabled or disabled for individual tables independently of the default setting.
 
